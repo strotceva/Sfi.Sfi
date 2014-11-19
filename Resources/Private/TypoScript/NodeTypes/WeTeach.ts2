@@ -1,0 +1,9 @@
+prototype(Sfi.Sfi:WeTeach) {
+	picture = TYPO3.Neos.NodeTypes:Image{
+		@override.node = ${q(node).find('[instanceof TYPO3.Neos.NodeTypes:Image]').get(0)}
+		maximumWidth = 600
+		maximumHeight = 400
+		allowCropping = TRUE
+	}
+}
+

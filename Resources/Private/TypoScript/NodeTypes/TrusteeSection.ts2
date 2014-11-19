@@ -1,0 +1,12 @@
+prototype(Sfi.Sfi:TrusteeSection) {
+	sectionName = ${section}
+    node = ${q(node).get(0)}
+    @override.theNode = ${this.node}
+
+    imageMaximumWidth = 96
+    imageMaximumHeight = 96
+
+	content = Sfi.Widgets:TextWithImage{
+		@override.node = ${q(theNode).get(0)}
+	}
+}

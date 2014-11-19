@@ -1,0 +1,18 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace media=TYPO3\Media\ViewHelpers}
+<div class="WeTeach">
+	<div class="row">
+		<div class="large-6 medium-6 large-push-6 medium-push-6 column">
+			<div class="marginHorizontal-double">
+				<div class="WeTeach-Text color-section">
+					{neos:contentElement.editable(property: 'text')}		
+				</div>
+			</div>
+		</div>
+		<div class="large-6 medium-6 large-pull-6 medium-pull-6 column">
+			<div class="WeTeach-Image">
+				{picture -> f:format.raw()}
+			</div>
+		</div>
+	</div>		
+</div>

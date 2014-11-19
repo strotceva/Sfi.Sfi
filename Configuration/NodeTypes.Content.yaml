@@ -1,0 +1,147 @@
+#Move this one to widgets
+'Sfi.Sfi:HideFor':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+  childNodes:
+    content:
+      type: 'TYPO3.Neos:ContentCollection'
+  ui:
+    label: 'Hide For'
+    icon: 'icon-mobile-phone'
+    group: 'structure'
+    inlineEditable: TRUE
+  properties:
+    class:
+      type: string
+      ui:
+        label: 'Hide For'
+        reloadIfChanged: FALSE
+        inspector:
+          group: 'visibility'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            placeholder: 'Default styleing'
+            values:
+              'show-for-medium-up':
+                label: 'show-for-medium-up'
+              'show-for-large-up':
+                label: 'show-for-large-up'
+              'show-for-xlarge-up':
+                label: 'show-for-xlarge-up'
+              'hide-for-medium-up':
+                label: 'hide-for-medium-up'
+              'hide-for-large-up':
+                label: 'hide-for-large-up'
+              'hide-for-xlarge-up':
+                label: 'hide-for-xlarge-up'
+
+
+
+
+########################
+#Our site content types#
+########################
+
+#DELME
+'Sfi.Sfi:WeTeach':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+    - 'TYPO3.Neos.NodeTypes:Image'
+  childNodes:
+    picture:
+      type: 'TYPO3.Neos.NodeTypes:Image'
+  ui:
+    label: 'We teach'
+    icon: 'icon-edit'
+    group: contentBlocks
+  properties:
+    text:
+      type: string
+      defaultValue: '<h3>We teach title</h3><p>What we teah description here</p>'
+      ui:
+        inlineEditable: TRUE
+
+#DELME
+'Sfi.Sfi:Card':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+    - 'TYPO3.Neos.NodeTypes:Image'
+  childNodes:
+    picture:
+      type: 'TYPO3.Neos.NodeTypes:Image'
+  ui:
+    label: 'Card'
+    icon: 'icon-edit'
+    group: contentBlocks
+  properties:
+    title:
+      type: string
+      defaultValue: '<h3>Title</h3>'
+      ui:
+        inlineEditable: TRUE
+    subtitle:
+      type: string
+      defaultValue: '<p>Subtitle here</p>'
+      ui:
+        inlineEditable: TRUE
+    text:
+      type: string
+      defaultValue: '<p>Card text here. Card text here. Card text here. Card text here.</p>'
+      ui:
+        inlineEditable: TRUE
+
+
+'Sfi.Sfi:QuoteBlock':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+    - 'TYPO3.Neos.NodeTypes:Image'
+  ui:
+    label: 'Quote block'
+    icon: 'icon-edit'
+    group: contentBlocks
+  properties:
+    authorName:
+      type: string
+      defaultValue: '<h3>Author Name</h3>'
+      ui:
+        inlineEditable: TRUE
+    authorDescription:
+      type: string
+      defaultValue: '<p>Author description</p>'
+      ui:
+        inlineEditable: TRUE
+    text:
+      type: string
+      defaultValue: '<p>Enter quotation text here</p>'
+      ui:
+        inlineEditable: TRUE
+
+
+
+#DELME
+'Sfi.Sfi:QuoteAndPictureBlock':
+  superTypes:
+    - 'Sfi.Sfi:QuoteBlock'
+  childNodes:
+    picture:
+      type: 'TYPO3.Neos.NodeTypes:Image'
+  ui:
+    label: 'Quote with Picture'
+    icon: 'icon-edit'
+
+
+'Sfi.Sfi:TrusteeSection':
+  superTypes:
+    - 'Sfi.Widgets:TextWithImage'
+    - 'TYPO3.Neos.NodeTypes:Image'
+  ui:
+    label: 'Trustee Section'
+    icon: 'icon-edit'
+  properties:
+    anchorImage:
+      type: TYPO3\Media\Domain\Model\ImageVariant
+      ui:
+        label: 'Anchor Image'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
