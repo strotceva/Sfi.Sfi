@@ -1,7 +1,7 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
 <div class="MainMenu js-MainMenu">
-	<div class="MainMenu-Sections js-MainMenu-Sections">
+	<div class="MainMenu-Sections js-MainMenu-Toggle show-for-large-up">
 		<div class="row">
 			<f:for each="{items}" as="item" iteration="iterator">
 				<div class="MainMenu-Section medium-3 columns {f:if(condition:iterator.isLast,then:'end')} {ts:render(path:'{item.state}.attributes.class', context: {item: item}) -> f:format.raw()}" >
@@ -24,4 +24,10 @@
 			</f:for>
 		</div>
 	</div>
+	<div class="row">
+		<div class="columns">
+			<div class="Header-MenuBorder"></div>
+		</div>
+	</div>
+	<div class="js-MainMenu-Overlay"></div>
 </div>

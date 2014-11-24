@@ -1,14 +1,24 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 <header class="Header">
 	{mainMenu -> f:format.raw()}
-	<div class="row marginTop-single">
+	<div class="row">
 		<div class="columns">
 			<div class="Header-Wrap {f:if(condition:"{header.withLine}", then: 'Header-Wrap--Line borderColor-section')}">
-				<div class="Header-Logo">
-					<neos:link.node node="~" title="На главную"><f:render partial="Svg/SiteLogo"/></neos:link.node>
-				</div>
-				<div class="Header-Menu">
-					<a href="#menu"><f:render partial="Svg/IconMenu"/></a>
+				<div class="marginTop-sesquialteral marginBottom-half">
+					<div class="Header-Logo">
+						<neos:link.node node="~" title="На главную"><f:render partial="Svg/SiteLogo"/></neos:link.node>
+					</div>
+					<div class="Header-Contacts show-for-large-up large-2">
+						<p>Москва, Покровка 29</p>
+						<p><a href="tel:+74956230380">+7 495 623-0380</a></p>
+						<p><a href="mailto:info@sfi.ru">info@sfi.ru</a></p>
+					</div>
+					<div class="Header-SecondaryMenu show-for-large-up large-2">
+						{secondaryMenu -> f:format.raw()}
+					</div>
+					<div class="Header-Menu marginTop-sesquialteral hide-for-large-up">
+						<a href="#menu" class="js-MainMenu-Toggle"><f:render partial="Svg/IconMenu"/></a>
+					</div>
 				</div>
 			</div>
 			<f:if condition="{breadcrumbMenu}">

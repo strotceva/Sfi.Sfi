@@ -1,0 +1,22 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<div class="row">
+	<div class="columns">
+		<div class="ServiceEm textAlign-center marginBottom-none" >
+			Коротко об СФИ
+		</div>
+	</div>
+</div>
+<div class="PresentationMenu">
+	<div class="row">
+		<div class="columns">
+			<ul class="medium-block-grid-4">
+				<f:for each="{items}" as="item" iteration="iterator">
+					<li class="">
+						<neos:link.node node="{item.node}" class="PresentationMenu-Item">{item.node.properties.altTitle}</neos:link.node>
+					</li>
+				</f:for>
+			</ul>
+		</div>
+	</div>
+</div>

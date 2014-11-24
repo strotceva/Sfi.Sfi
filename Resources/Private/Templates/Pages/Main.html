@@ -4,6 +4,21 @@
 
 <f:section name="body">
 	<f:render partial="Header" arguments="{_all}"/>
+	<section class="marginTop-triple">
+		<div class="row">
+			<div class="columns">
+				<h2 class="H1" style="margin-bottom: 0 !important">Современный. Традиционный. Открытый.</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="medium-10 large-8 columns">
+				<p class="ParagraphAlt">Свято-Филаретовский институт — независимое высшее богословское учебное заведение, православная духовная школа, сохраняющая светский статус</p>
+			</div>
+		</div>
+	</section>
+	<div class="section marginTop-double marginBottom-triple">
+		{presentationMenu -> f:format.raw()}
+	</div>
 	{content.main -> f:format.raw()}
 	<f:render partial="Footer"  arguments="{_all}"/>
 </f:section>

@@ -29,6 +29,11 @@ prototype(Sfi.Sfi:Page) < prototype(TYPO3.Neos:Page) {
 			maximumLevels = 2
 		}
 
+		secondaryMenu = Menu{
+			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/SecondaryMenu.html'
+			itemCollection = ${q(site).children('links').children('[instanceof TYPO3.Neos:Document]').get()}
+		}
+
 		breadcrumbMenu = BreadcrumbMenu{
 			attributes.class = 'BreadcrumbMenu'
 		}
