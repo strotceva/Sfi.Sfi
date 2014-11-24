@@ -23,7 +23,8 @@ prototype(Sfi.Sfi:Page) < prototype(TYPO3.Neos:Page) {
 		partialRootPath = 'resource://Sfi.Sfi/Private/Templates/Partials'
 		sectionName = 'body'
 
-		menu = Menu{
+		mainMenu = Menu{
+			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/MainMenu.html'
 			entryLevel = 1
 			maximumLevels = 2
 		}

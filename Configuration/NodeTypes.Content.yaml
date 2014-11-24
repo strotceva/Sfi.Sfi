@@ -1,3 +1,7 @@
+'Sfi.News:Announcement':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+
 #Move this one to widgets
 'Sfi.Sfi:HideFor':
   superTypes:

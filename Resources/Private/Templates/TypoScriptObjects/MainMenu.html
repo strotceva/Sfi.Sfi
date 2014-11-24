@@ -1,0 +1,27 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<div class="MainMenu js-MainMenu">
+	<div class="MainMenu-Sections js-MainMenu-Sections">
+		<div class="row">
+			<f:for each="{items}" as="item" iteration="iterator">
+				<div class="MainMenu-Section medium-3 columns {f:if(condition:iterator.isLast,then:'end')} {ts:render(path:'{item.state}.attributes.class', context: {item: item}) -> f:format.raw()}" >
+					<neos:link.node node="{item.node}" />
+				</div>
+			</f:for>
+		</div>
+	</div>
+	<div class="MainMenu-SubSectionsWrap js-MainMenu-SubSectionsWrap">
+		<div class="row">
+			<f:for each="{items}" as="item" iteration="iterator">
+				<div class="MainMenu-SubSections medium-3 columns {f:if(condition:iterator.isLast,then:'end')} {ts:render(path:'{item.state}.attributes.class', context: {item: item}) -> f:format.raw()}" >
+					<neos:link.node node="{item.node}" class="MainMenu-Presentation">{item.node.properties.altTitle}</neos:link.node>
+					<f:if condition="{item.subItems}">
+						<f:for each="{item.subItems}" as="subItem">
+							<neos:link.node node="{subItem.node}" class="MainMenu-SubSection {ts:render(path:'{subItem.state}.attributes.class', context: {item: subItem}) -> f:format.raw()}" />
+						</f:for>
+					</f:if>
+				</div>
+			</f:for>
+		</div>
+	</div>
+</div>
