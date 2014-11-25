@@ -5,6 +5,12 @@
 
 <f:section name="body">
 	<f:render partial="Header" arguments="{_all}"/>
+	<div class="row">
+		<div class="columns">
+			<h1 class="PageTitle marginTop-triple">{node.properties.title}</h1>
+			{sectionMenu -> f:format.raw()}
+		</div>
+	</div>
 	{content.main -> f:format.raw()}
 	<f:render partial="Footer"  arguments="{_all}"/>
 </f:section>

@@ -3,7 +3,7 @@
 	{mainMenu -> f:format.raw()}
 	<div class="row">
 		<div class="columns">
-			<div class="Header-Wrap {f:if(condition:"{header.withLine}", then: 'Header-Wrap--Line borderColor-section')}">
+			<div class="Header-Wrap">
 				<div class="marginTop-sesquialteral marginBottom-half">
 					<div class="Header-Logo">
 						<neos:link.node node="~" title="На главную"><f:render partial="Svg/SiteLogo"/></neos:link.node>
@@ -21,9 +21,12 @@
 					</div>
 				</div>
 			</div>
+
+			{presentationMenu -> f:format.raw()}
 			<f:if condition="{breadcrumbMenu}">
 			    {breadcrumbMenu -> f:format.raw()}
 			</f:if>
+
 		</div>
 	</div>
 </header>

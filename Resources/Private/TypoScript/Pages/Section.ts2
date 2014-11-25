@@ -3,12 +3,7 @@ section < page{
 	body{
 		templatePath = 'resource://Sfi.Sfi/Private/Templates/Pages/Section.html'
 
-		sectionMenu = Menu
-		sectionMenu {
-			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/SectionMenu.html'
-			entryLevel = 2
-		    maximumLevels = 0
-		}
+		
 
 		node = ${q(node).get(0)}
 

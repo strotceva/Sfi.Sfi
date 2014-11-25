@@ -25,13 +25,24 @@ prototype(Sfi.Sfi:Page) < prototype(TYPO3.Neos:Page) {
 
 		mainMenu = Menu{
 			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/MainMenu.html'
+			partialRootPath = 'resource://Sfi.Sfi/Private/Templates/Partials'
 			entryLevel = 1
 			maximumLevels = 2
 		}
-
+		presentationMenu = Menu{
+			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/PresentationMenu.html'
+			entryLevel = 1
+			maximumLevels = 1
+		}
 		secondaryMenu = Menu{
 			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/SecondaryMenu.html'
 			itemCollection = ${q(site).children('links').children('[instanceof TYPO3.Neos:Document]').get()}
+		}
+		sectionMenu = Menu
+		sectionMenu {
+			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/SectionMenu.html'
+			entryLevel = 2
+			maximumLevels = 0
 		}
 
 		breadcrumbMenu = BreadcrumbMenu{

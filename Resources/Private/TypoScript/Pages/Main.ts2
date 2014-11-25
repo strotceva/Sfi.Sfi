@@ -2,11 +2,6 @@ main < page{
 	bodyTag.attributes.class = 'Page Page--Main'
 	body{
 		templatePath = 'resource://Sfi.Sfi/Private/Templates/Pages/Main.html'
-		presentationMenu = Menu{
-			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/PresentationMenu.html'
-			entryLevel = 1
-			maximumLevels = 1
-		}
 		breadcrumbMenu>
 	}
 }
