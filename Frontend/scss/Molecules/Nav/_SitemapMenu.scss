@@ -1,0 +1,73 @@
+// Adjust gaps for blockgrid in menus
+.MainMenu, .SitemapMenu{
+	.medium-block-grid-4{
+		margin: 0 -12px;
+		li {
+			padding: 0 12px;
+		}
+	}
+}
+
+.SitemapMenu .icon-right-dir{
+	position: absolute;
+	color: $red;
+	left: 12px;
+	top: 12px;
+}
+.SitemapMenu.isActive .icon-right-dir:before { content: '\e80e'; }
+
+.SitemapMenu-Toggle{
+	@extend .H5;
+	margin: 0 !important;
+	padding: $u 3*$u;
+	cursor: pointer;
+	&:hover{
+		color: $red;
+	}
+}
+.SitemapMenu-FollowLinks{
+	margin: 11px 0;
+}
+
+
+
+.SitemapMenu-SectionsWrap{
+	background: $gray-bg--light;
+	display: none;
+}
+.js-SitemapMenu.isActive .SitemapMenu-SectionsWrap{
+	display: block;
+}
+
+.SitemapMenu-Presentation{
+	display: block;
+	@extend .H3;
+	color: white;
+	text-align: center;
+	background: $red;
+	line-height: $lineHeight-single;
+	padding: $u;
+}
+
+.SitemapMenu-Section{
+	@extend .ParagraphAlt--Small;
+	display: block;
+}
+
+.SitemapMenu-Sections:hover{
+	background: white;
+}
+
+// TODO: Could be refacotred with a section color mixin
+.SitemapMenu-SectionsWrap .SitemapMenu-Sections:nth-child(1) .SitemapMenu-Presentation{
+	background: $red;
+}
+.SitemapMenu-SectionsWrap .SitemapMenu-Sections:nth-child(2) .SitemapMenu-Presentation{
+	background: $blue;
+}
+.SitemapMenu-SectionsWrap .SitemapMenu-Sections:nth-child(3) .SitemapMenu-Presentation{
+	background: $green;
+}
+.SitemapMenu-SectionsWrap .SitemapMenu-Sections:nth-child(4) .SitemapMenu-Presentation{
+	background: $violet;
+}

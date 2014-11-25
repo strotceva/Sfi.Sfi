@@ -1,0 +1,13 @@
+.Figure{
+	margin: $u 0;
+	display: table;
+	figcaption{
+		@extend .ParagraphAlt;
+		margin: 0;
+		display: table-caption;
+		caption-side: bottom;
+		background: $red;
+		color: white;
+		padding: $u;
+	}
+}

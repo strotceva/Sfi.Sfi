@@ -1,0 +1,13 @@
+.BreadcrumbMenu{
+	li{
+		@extend .Service--Small;
+		float: left;
+		margin-right: $u;
+	}
+	li:last-child:after{
+		content: '';
+	}
+	li:after{
+		content: ' »';
+	}
+}

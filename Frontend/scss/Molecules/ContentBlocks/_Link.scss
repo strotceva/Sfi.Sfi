@@ -1,0 +1,13 @@
+.ImageLink{
+	display: inline-block;
+	width: 300px;
+	height: 250px;
+	background-repeat: no-repeat; 
+	padding-top: 3*$u;
+	margin-right: 2*$u;
+
+	font-family: $fontFamily-alt;
+	font-size: rem-calc(36);
+	color: white;
+	text-align: center;
+}

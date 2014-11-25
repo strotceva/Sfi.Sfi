@@ -1,0 +1,40 @@
+.QuoteAndPictureBlock{}
+
+.QuoteAndPictureBlockAnchor{
+	margin-bottom: $u;
+}
+
+.QuoteAndPictureBlockAnchor-AuthorName{
+	@extend .H6;
+	margin: 0;
+	border-top: 1px solid $gray-line;
+	padding-top: $u;
+}
+.QuoteAndPictureBlock-AuthorName{
+	@extend .H2;
+	margin: 0;
+}
+.QuoteAndPictureBlockAnchor-Image{
+}
+.QuoteAndPictureBlock-AuthorDescription,.QuoteAndPictureBlockAnchor-AuthorDescription{
+	@extend .ParagraphAlt--Small;
+	margin-top: $u/2;
+}
+.QuoteAndPictureBlockAnchor-AuthorDescription{
+
+}
+
+.QuoteAndPictureBlock-Text{
+	@extend .Blockquote;
+}
+@media #{$medium-up} {
+	.QuoteAndPictureBlock-Text{
+		margin-top: 2*$u;
+	}
+	.QuoteAndPictureBlock{
+		margin-top: 3*$u;
+	}
+	.QuoteAndPictureBlock-Text{
+		font-size: rem-calc(21);
+	}
+}

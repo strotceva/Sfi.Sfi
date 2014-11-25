@@ -1,0 +1,42 @@
+.Header-Wrap{
+	position: relative;
+	overflow: auto;
+}
+
+.Header-Logo{
+	display: inline-block;
+	margin-bottom: -6px;
+}
+@media #{$large-up}{
+	.Header-Logo{
+		width: 400px;
+	}
+}
+.Header-Menu{
+	position: absolute; 
+	right: 0; 
+	top: 0;
+}
+
+.Header-MenuBorder{
+	border-bottom: 2px solid black;
+}
+
+.Header-SecondaryMenu{
+	float: right;
+	margin-left: $u;
+	margin-right: $u;
+	margin-top: -$u/2;
+	margin-bottom: -$u/2;
+}
+.Header-Contacts{
+	float: right;
+	margin-left: $u;
+	margin-right: $u;
+	margin-top: -$u/2;
+	margin-bottom: -$u/2;
+	font-size: rem-calc(14);
+	p{
+		margin: $u/2 0;
+	}
+}

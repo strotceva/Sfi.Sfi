@@ -1,0 +1,33 @@
+.Paragraph{
+	margin: $u 0;
+	font-size: rem-calc(18);
+	line-height: 1.5;
+}
+.Paragraph--Large{
+	@extend .Paragraph;
+	font-size: rem-calc(21);
+}
+.Paragraph--Small{
+	@extend .Paragraph;
+	font-size: rem-calc(16);
+}
+
+.ParagraphAlt{
+	margin: $u 0;
+	font-family: $fontFamily-alt;
+	font-size: rem-calc(16);
+	line-height: 1.5;
+	color: $gray--dark;
+}
+.ParagraphAlt--Small{
+	@extend .ParagraphAlt;
+	font-size: rem-calc(14);
+	line-height: 1.3;
+}
+.ParagraphAlt--Large{
+	@extend .ParagraphAlt;
+	font-size: rem-calc(18);
+	color: black;
+}
+
+

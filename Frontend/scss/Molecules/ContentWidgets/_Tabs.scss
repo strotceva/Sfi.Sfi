@@ -1,0 +1,56 @@
+// Hackish way to fix tabs
+.neos-empty-contentcollection-overlay{
+	display: none !important;
+}
+
+.Sections-Tabs {
+    margin: 0;
+    padding: 0;
+}
+
+.Sections-Tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+
+.Sections-Panel {
+    display: none;
+}
+
+.Sections-Tabs {
+	display: none;
+}
+
+.Sections-Panel.isActive {
+    display: block;
+}
+
+/* Accordion responsive breakpoint */
+@media #{$medium-up} {
+    .Sections-Tabs {
+        display: block;
+    }
+
+    .Sections-AccordionTitle {
+        display: none;
+    }
+}
+
+
+.Sections--Pills{
+	.Sections-Anchor{
+		@extend .Service;
+		&:after{
+			content: ' »';
+            color: $red;
+		}
+	}
+    .Sections-Tabs{
+        margin-bottom: 3*$u;
+    }
+	.Sections-Tab{
+		padding: 0;
+		padding-right: 2*$u; 
+	}
+}

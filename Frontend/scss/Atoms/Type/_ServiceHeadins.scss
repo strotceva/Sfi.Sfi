@@ -1,0 +1,14 @@
+.Service{
+	@extend .ParagraphAlt;
+	color: $gray--light;
+}
+
+.Service--Small{
+	@extend .ParagraphAlt--Small;
+	color: $gray--light;
+}
+
+.ServiceEm{
+	font-style: italic;
+	color: $gray--light;
+}

@@ -1,0 +1,22 @@
+
+.SectionMenu{
+	text-align: center;
+	margin-bottom: 2*$u;
+}
+
+
+.SectionMenu-Item{
+	display: inline-block;
+	@extend .H5;
+	margin: 0 !important;
+	padding: 0;
+	padding-right: 2*$u; 
+	&:after{
+		content: ' »';
+        color: $red;
+	}
+}
+
+.SectionMenu-Item.current{
+	color: $red;
+}

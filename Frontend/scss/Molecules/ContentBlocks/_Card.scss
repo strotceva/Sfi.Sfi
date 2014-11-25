@@ -1,0 +1,11 @@
+.Card-Title{
+	@extend .H4;
+	margin-bottom: 0;
+}
+.Card-Subtitle{
+	@extend .ParagraphAlt--Small;
+	margin-top: 0;
+}
+.Card-Text{
+	@extend .ParagraphAlt;
+}

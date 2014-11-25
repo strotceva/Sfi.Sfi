@@ -1,0 +1,21 @@
+.Media-Body{
+	background: $gray-bg--light;
+	padding: $u;
+}
+.Media-Title{
+	@extend .H6;
+}
+.Media-Teaser{
+	@extend .ParagraphAlt;
+}
+.Media-Date{
+	@extend .H6;
+	color: $color-primary;
+}
+.Media-Category{
+	@extend .H5;
+	display: none;
+}
+.Media-Image img{
+	width: 100%;
+}

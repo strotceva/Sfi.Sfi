@@ -1,0 +1,25 @@
+.MainMenu-Item a{
+	display: block;
+	@extend .H3;
+	color: white;
+	padding: 1.5*$u $u;
+	margin: 2px 0 !important;
+	text-align: center;
+	color: white;
+}
+.MainMenu-Item.current a,.MainMenu-Item.active a, .MainMenu-Item:hover a{
+	text-decoration: underline;
+}
+
+.MainMenu .MainMenu-Item:nth-child(1) a{
+	background: $red;
+}
+.MainMenu .MainMenu-Item:nth-child(2) a{
+	background: $blue;
+}
+.MainMenu .MainMenu-Item:nth-child(3) a{
+	background: $green;
+}
+.MainMenu .MainMenu-Item:nth-child(4) a{
+	background: $violet;
+}

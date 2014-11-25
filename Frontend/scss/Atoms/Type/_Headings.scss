@@ -1,0 +1,53 @@
+
+%mainHeadings{
+	@extend .marginVertical-single;
+	font-family: $fontFamily-alt;
+	line-height: 1.2;
+}
+.H1{
+	@extend %mainHeadings;
+	font-size: rem-calc(36);
+	font-weight: bold;
+}
+.H2{
+	@extend %mainHeadings;
+	font-size: rem-calc(24);
+	font-weight: bold;
+}
+.H3{
+	@extend %mainHeadings;
+	font-size: rem-calc(24);
+	letter-spacing: 1px;
+	color: $gray--dark;
+}
+.H4{
+	@extend %mainHeadings;
+	font-size: rem-calc(18);
+	font-weight: bold;
+	color: $gray--dark;
+	line-height: 1.3;
+}
+.H5{
+	@extend %mainHeadings;
+	font-size: rem-calc(18);
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: 1px;
+	color: $gray--dark;
+	line-height: 1.3;
+}
+.H6{
+	@extend %mainHeadings;
+	font-size: rem-calc(16);
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1.3;
+}
+
+
+.PageTitle{
+	@extend %mainHeadings;
+	font-size: rem-calc(48);
+	font-weight: normal;
+	text-align: center;
+}

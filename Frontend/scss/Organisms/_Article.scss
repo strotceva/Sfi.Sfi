@@ -1,0 +1,54 @@
+.Article{
+	margin-top: 2*$u;
+
+	.Figure figcaption{
+		background: $gray-bg--light;
+		color: $gray--dark;
+	}
+}
+.Article-Category{
+	@extend .H4;
+	color: $color-primary;
+	margin-bottom: 0;
+}
+.Article-Title{
+	@extend .H1;
+	margin-top: 0;
+	margin-bottom: 1.5*$u;
+}
+
+.Article-Bar{
+}
+.Article-Date{
+	@extend .ParagraphAlt--Small;
+	color: $color-primary;	
+}
+.Article-Author{
+	@extend .ParagraphAlt--Small;
+	color: $color-primary;
+}
+
+.Article-Teaser{
+	@extend .ParagraphAlt;
+	margin-top: 0;
+	margin-bottom: 1.5*$u;
+}
+.Article-CoverPhoto{
+	margin: 2*$u 0;
+}
+.Article-Content .Text{
+	p{
+		@extend .ParagraphAlt--Large;
+	}
+	h2{
+		@extend .H3;
+	}
+	h3{
+		@extend .H4;
+	}
+	h4{
+		@extend .ParagraphAlt--Large;
+		color: $color-primary;
+	}
+}
+.Article-Gallery{}

@@ -1,0 +1,27 @@
+.QuoteBlock{
+	margin: 2*$u 0;
+}
+.QuoteBlock-SourceWrap{
+	display: table;
+	height: 96px;
+}
+.QuoteBlock-Source{
+	display: table-cell;
+	vertical-align: middle;
+	color: $gray--light;
+	b{
+		@extend .H5;
+	}
+	i{
+		@extend .H5Alt;
+	}
+}
+.QuoteBlock-Image > img{
+	border: 1px solid $gray-line;
+	border-radius: 50%;
+	max-width: 96px;
+	margin-right: 2*$u;
+}
+.QuoteBlock-Text{
+	@extend .Blockquote;
+}
