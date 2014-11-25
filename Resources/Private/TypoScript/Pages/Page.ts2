@@ -23,14 +23,14 @@ prototype(Sfi.Sfi:Page) < prototype(TYPO3.Neos:Page) {
 		partialRootPath = 'resource://Sfi.Sfi/Private/Templates/Partials'
 		sectionName = 'body'
 
-		mainMenu = Menu{
-			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/MainMenu.html'
+		sitemapMenu = Menu{
+			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/SitemapMenu.html'
 			partialRootPath = 'resource://Sfi.Sfi/Private/Templates/Partials'
 			entryLevel = 1
 			maximumLevels = 2
 		}
-		presentationMenu = Menu{
-			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/PresentationMenu.html'
+		mainMenu = Menu{
+			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/MainMenu.html'
 			entryLevel = 1
 			maximumLevels = 1
 		}
