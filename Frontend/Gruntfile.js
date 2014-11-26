@@ -43,8 +43,8 @@ module.exports = function (grunt) {
 				},
 				options: {
 					proxy: "dev.typo3-app:8080",
-					port: 8080,
-					watchTask: true
+					watchTask: true,
+					hostname: '0.0.0.0'
 				}
 			}
 		}
@@ -58,5 +58,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-browser-sync');
 
 	// create custom task-list
-	grunt.registerTask('default', ["browserSync", "compass"]);
+	grunt.registerTask('default', ["compass"]);
 };

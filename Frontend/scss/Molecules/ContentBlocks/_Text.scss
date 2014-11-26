@@ -12,6 +12,7 @@
 		text-align: center;
 	}
 	p{@extend .Paragraph;}
+	a{@extend .Link;}
 }
 
 .StyleSet-Modern{
@@ -24,9 +25,8 @@
 	h3{
 		@extend .H6;
 	}
-	p{
-		@extend .ParagraphAlt;
-	}
+	p{@extend .ParagraphAlt;}
+	a{@extend .Link;}
 }
 
 
@@ -40,7 +40,6 @@
 	h3{
 		@extend .H6;
 	}
-	p{
-		@extend .Paragraph;
-	}
+	p{@extend .Paragraph;}
+	a{@extend .Link;}
 }

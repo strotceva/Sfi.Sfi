@@ -3,8 +3,14 @@ prototype(Sfi.Sfi:TrusteeSection) {
     node = ${q(node).get(0)}
     @override.theNode = ${this.node}
 
-    imageMaximumWidth = 96
-    imageMaximumHeight = 96
+    imageMaximumWidth = 120
+    imageMaximumHeight = 120
+
+    anchorImageMaximumWidth = 150
+    anchorImageMaximumHeight = 150
+
+    title = ${q(theNode).children('headline').property('title')}
+    subTitle = ${q(theNode).children('headline').property('subTitle')}
 
 	content = Sfi.Widgets:TextWithImage{
 		@override.node = ${q(theNode).get(0)}

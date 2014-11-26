@@ -5,7 +5,7 @@
 <f:section name="tab">
 	<div class="TrusteeSectionTabAnchor">
 		<f:if condition="{image}">
-			<div class="TrusteeSectionAnchor-Image">
+			<div class="TrusteeSectionTabAnchor-Image">
 				<media:image asset="{image}" alt="{alternativeText}" title="{title}" maximumWidth="{imageMaximumWidth}" maximumHeight="{imageMaximumHeight}" allowCropping="TRUE" />
 			</div>
 		</f:if>
@@ -16,17 +16,17 @@
 	<div class="TrusteeSectionAccordionAnchor">
 		<div class="row">
 			<div class="small-4 columns">
-				<f:if condition="{anchorImage}">
-					<div class="TrusteeSectionAnchor-Image">
-						<media:image asset="{anchorImage}" alt="{alternativeText}" title="{title}" maximumWidth="{anchorImageMaximumWidth}" maximumHeight="{anchorImageMaximumHeight}" allowCropping="TRUE" />
+				<f:if condition="{image}">
+					<div class="TrusteeSectionAccordionAnchor-Image">
+						<media:image asset="{image}" alt="{alternativeText}" title="{title}" maximumWidth="{anchorImageMaximumWidth}" maximumHeight="{anchorImageMaximumHeight}" allowCropping="TRUE" />
 					</div>
 				</f:if>
 			</div>
 			<div class="small-8 columns" style="padding-left:0">
-				<div class="TrusteeSectionAnchor-Title color-section">
+				<div class="TrusteeSectionAccordionAnchor-Title">
 					{title -> f:format.raw()}
 				</div>
-				<div class="TrusteeSectionAnchor-SubTitle">
+				<div class="TrusteeSectionAccordionAnchor-SubTitle">
 					{subTitle -> f:format.raw()}
 				</div>
 			</div>
