@@ -1,0 +1,17 @@
+prototype(Sfi.Sfi:ExhibitionSection) {
+	sectionName = ${section}
+    node = ${q(node).get(0)}
+    @override.theNode = ${this.node}
+
+    imageMaximumWidth = 120
+    imageMaximumHeight = 120
+
+    anchorImageMaximumWidth = 150
+    anchorImageMaximumHeight = 150
+
+    title = ${q(theNode).children('headline').property('title')}
+
+	content = Sfi.Widgets:TextWithImage{
+		@override.node = ${q(theNode).get(0)}
+	}
+}

@@ -1,0 +1,33 @@
+.ExhibitionSectionTabAnchor{
+	padding-right: $u;
+	padding-bottom: $u;
+	img{
+		width: 120px !important;
+	}
+}
+
+.ExhibitionSectionTabAnchor-Image{
+	opacity: 0.8;
+}
+.ExhibitionSectionTabAnchor-Image:hover,.Sections-Anchor.isActive .ExhibitionSectionTabAnchor-Image{
+	opacity: 1;
+}
+.ExhibitionSectionTabAnchor-Title{
+	color: green;
+}
+
+
+@media #{$small-only}{
+	.TextWithImage-Headline{
+		display: none;
+	}
+}
+.ExhibitionSectionAccordionAnchor{
+	margin-bottom: $u;
+}
+.ExhibitionSectionAccordionAnchor-Title{
+	@extend .H6;
+	margin: 0 !important;
+	border-top: 1px solid $gray-line;
+	padding-top: $u;
+}

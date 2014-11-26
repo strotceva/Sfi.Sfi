@@ -145,3 +145,19 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'image'
+
+'Sfi.Sfi:ExhibitionSection':
+  superTypes:
+    - 'Sfi.Widgets:TextWithImage'
+    - 'TYPO3.Neos.NodeTypes:Image'
+  ui:
+    label: 'Exhibition Section'
+    icon: 'icon-edit'
+  properties:
+    anchorImage:
+      type: TYPO3\Media\Domain\Model\ImageVariant
+      ui:
+        label: 'Anchor Image'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
