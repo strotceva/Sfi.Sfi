@@ -12,3 +12,7 @@
 	font-style: italic;
 	color: $gray--light;
 }
+
+.PageTitle{
+	@extend .H1Alt;
+}

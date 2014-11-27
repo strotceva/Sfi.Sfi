@@ -47,7 +47,6 @@ var onReadyPlugins = function() {
 
 // TODO: optimize carousel init code
     $('.js-carousel-1x').slick({
-        slide: '.Carousel-Item',
         dots: true,
         infinite: true,
         speed: 300,
@@ -58,7 +57,6 @@ var onReadyPlugins = function() {
     });
 
     $('.js-carousel-2x').slick({
-        slide: '.Carousel-Item',
         dots: true,
         infinite: true,
         speed: 300,
@@ -85,7 +83,6 @@ var onReadyPlugins = function() {
     });
 
     $('.js-carousel-3x').slick({
-        slide: '.Carousel-Item',
         dots: true,
         infinite: true,
         speed: 300,
