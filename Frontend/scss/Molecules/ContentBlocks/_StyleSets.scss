@@ -63,3 +63,9 @@
 	p{@extend .ParagraphAlt;}
 	a{@extend .Link;}
 }
+
+// TODO: Hackish, due to lack of classes in Aloha
+.OverrideParagraph p{
+	font-family: inherit !important;
+	font-size: inherit !important;
+}
