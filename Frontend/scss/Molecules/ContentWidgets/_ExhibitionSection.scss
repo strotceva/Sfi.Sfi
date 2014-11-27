@@ -1,4 +1,4 @@
-.ExhibitionSectionTabAnchor{
+.SectionWithImageTabAnchor{
 	padding-right: $u;
 	padding-bottom: $u;
 	img{
@@ -6,28 +6,31 @@
 	}
 }
 
-.ExhibitionSectionTabAnchor-Image{
+.SectionWithImageTabAnchor-Image{
 	opacity: 0.8;
 }
-.ExhibitionSectionTabAnchor-Image:hover,.Sections-Anchor.isActive .ExhibitionSectionTabAnchor-Image{
+.SectionWithImageTabAnchor-Image:hover,.Sections-Anchor.isActive .SectionWithImageTabAnchor-Image{
 	opacity: 1;
 }
-.ExhibitionSectionTabAnchor-Title{
-	color: green;
-}
 
 
-@media #{$small-only}{
-	.TextWithImage-Headline{
-		display: none;
-	}
-}
-.ExhibitionSectionAccordionAnchor{
+.SectionWithImageAccordionAnchor{
 	margin-bottom: $u;
 }
-.ExhibitionSectionAccordionAnchor-Title{
+.SectionWithImageAccordionAnchor-Title{
 	@extend .H6;
 	margin: 0 !important;
 	border-top: 1px solid $gray-line;
 	padding-top: $u;
+}
+.SectionWithImageAccordionAnchor-SubTitle{
+	@extend .ParagraphAlt--Small;
+	margin-top: $u/2;
+}
+
+
+@media #{$small-only}{
+	.SectionWithImagePanel .TextWithImage-Headline{
+		display: none;
+	}
 }
