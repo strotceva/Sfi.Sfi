@@ -12,9 +12,9 @@
 	margin-bottom: 0;
 }
 .Article-Title{
-	@extend .H2;
+	@extend .H1Alt;
 	margin-top: 0;
-	margin-bottom: 1.5*$u;
+	margin-bottom: 0;
 }
 
 .Article-Bar{
@@ -29,10 +29,14 @@
 }
 
 .Article-Teaser{
-	@extend .ParagraphAlt;
-	margin-top: 0;
+	@extend .H4Alt;
+	text-align: center;
 	margin-bottom: 1.5*$u;
 }
+.Article-Lead{
+	@extend .Paragraph--Large;
+}
+
 .Article-CoverPhoto{
 	margin: 2*$u 0;
 }

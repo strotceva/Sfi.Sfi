@@ -12,21 +12,21 @@
 	position: absolute;
 	color: $red;
 	left: 12px;
-	top: 12px;
+	top: 5px;
 }
 .SitemapMenu.isActive .icon-right-dir:before { content: '\e80e'; }
 
 .SitemapMenu-Toggle{
 	@extend .H5;
 	margin: 0 !important;
-	padding: $u 3*$u;
+	padding: $u/2 3*$u;
 	cursor: pointer;
 	&:hover{
 		color: $red;
 	}
 }
 .SitemapMenu-FollowLinks{
-	margin: 11px 0;
+	margin: 5px 0;
 }
 
 
