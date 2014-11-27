@@ -8,12 +8,13 @@
 }
 
 .Sections-Tabs {
+    overflow: auto;
     margin: 2*$u 0;
     padding: 0;
 }
 
 .Sections-Tab {
-    display: inline-block;
+    float: left;
     margin: 0;
     list-style: none;
 }
@@ -78,9 +79,6 @@
 .SectionWithImageTabAnchor{
     padding-right: $u;
     padding-bottom: $u;
-    img{
-        width: 120px !important;
-    }
 }
 
 .SectionWithImageTabAnchor-Image{
@@ -90,6 +88,17 @@
     opacity: 1;
 }
 
+.Sections-Anchor.isActive .SectionWithImageTabAnchor-Image{
+    position: relative;
+}
+.Sections-Anchor.isActive .SectionWithImageTabAnchor-Image:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid;
+}
 
 .SectionWithImageAccordionAnchor{
     margin-bottom: $u;
@@ -109,5 +118,21 @@
 @media #{$small-only}{
     .SectionWithImagePanel .TextWithImage-Headline{
         display: none;
+    }
+}
+
+
+
+.SectionWithImageTabAnchor-Title{
+    @extend .Service;
+}
+
+
+@media #{$medium-up}{
+    .SectionWithImageTabAnchor--Variant1{
+        width: 120px !important;
+    }
+    .SectionWithImageTabAnchor--Variant2{
+        width: 200px !important;
     }
 }

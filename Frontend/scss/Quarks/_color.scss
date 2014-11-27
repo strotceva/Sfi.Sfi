@@ -38,15 +38,19 @@ $color-primary: $red;
 		.Figcaption{
 			background-color: $color !important;
 		}
-		.Blockquote, .QuoteBlock-Text, .QuoteAndPictureBlock-Text{
-			border-left-color: $color !important;
+		.Blockquote,
+		.Blockquote,
+		.QuoteBlock,
+		.QuoteAndPictureBlock-Text,
+		.SectionWithImageTabAnchor-Image:before{
+			border-color: $color !important;
 		}
 		.SectionMenu-Item:after,
-		.StyleSet-Modern .Headline-Title,
-		.StyleSet-Modern .Headline-Title,
+		.StyleSet-ModernModest .Headline-Title,
+		.StyleSet-ModernModest .Headline-Title,
 		.slick-prev:before, .slick-next:before,
 		.slick-dots li.slick-active button:before,
-		.Sections--Pills .Sections-Anchor:after{
+		.Sections--Pills .Sections-Anchor:after,{
 			color: $color !important;
 		}
 	}

@@ -1,7 +1,7 @@
 .Blockquote{
 	@extend .Paragraph;
 	font-style: italic;
-	border-left: 5px solid $red;
+	border-left: 5px solid;
 	padding-left: 2*$u;
 	margin-top: 2*$u;
 }

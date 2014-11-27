@@ -1,27 +1,33 @@
 .QuoteBlock{
 	margin: 2*$u 0;
 }
-.QuoteBlock-SourceWrap{
-	display: table;
-	height: 96px;
-}
-.QuoteBlock-Source{
-	display: table-cell;
-	vertical-align: middle;
-	color: $gray--light;
-	b{
-		@extend .H5;
-	}
-	i{
-		@extend .H6Alt;
-	}
-}
-.QuoteBlock-Image > img{
-	border: 1px solid $gray-line;
-	border-radius: 50%;
-	max-width: 96px;
-	margin-right: 2*$u;
-}
 .QuoteBlock-Text{
 	@extend .Blockquote;
+}
+.QuoteBlock-AuthorName{
+	@extend .H6;
+	color: $gray--light;
+	margin-bottom: $u/2 !important;
+}
+.QuoteBlock-AuthorDescription{
+	@extend .H6Alt;
+	margin-top: 0 !important;
+}
+
+@media #{$small-only}{
+	.QuoteBlock-Image > img{
+		border: 1px solid $gray-line;
+		border-radius: 50%;
+		max-width: 96px;
+		margin-right: 2*$u;
+	}
+}
+@media #{$medium-up}{
+	.QuoteBlock-Text{
+		border-left: 0;
+		padding-left: 0;
+	}
+	.QuoteBlock{
+		border-bottom: 5px solid;
+	}
 }
