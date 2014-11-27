@@ -1,12 +1,21 @@
 .MediaSlide{
-
+	position: relative;
 }
 .MediaSlide-Title{
 	@extend .H2;
+	color: white !important;
 }
 .MediaSlide-Teaser{
 	@extend .ParagraphAlt;
+	color: white !important;
 }
 
 .MediaSlide-Body{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50%;
+
+	background: $red;
+	padding: $u;
 }
