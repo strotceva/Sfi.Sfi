@@ -42,6 +42,15 @@
 }
 
 
+
+
+
+
+
+
+
+
+
 .Sections--Pills{
 	.Sections-Anchor{
 		@extend .Service;
@@ -57,4 +66,48 @@
 		padding: 0;
 		padding-right: 2*$u; 
 	}
+}
+
+
+
+
+
+
+
+
+.SectionWithImageTabAnchor{
+    padding-right: $u;
+    padding-bottom: $u;
+    img{
+        width: 120px !important;
+    }
+}
+
+.SectionWithImageTabAnchor-Image{
+    opacity: 0.8;
+}
+.SectionWithImageTabAnchor-Image:hover,.Sections-Anchor.isActive .SectionWithImageTabAnchor-Image{
+    opacity: 1;
+}
+
+
+.SectionWithImageAccordionAnchor{
+    margin-bottom: $u;
+}
+.SectionWithImageAccordionAnchor-Title{
+    @extend .H6;
+    margin: 0 !important;
+    border-top: 1px solid $gray-line;
+    padding-top: $u;
+}
+.SectionWithImageAccordionAnchor-SubTitle{
+    @extend .ParagraphAlt--Small;
+    margin-top: $u/2;
+}
+
+
+@media #{$small-only}{
+    .SectionWithImagePanel .TextWithImage-Headline{
+        display: none;
+    }
 }

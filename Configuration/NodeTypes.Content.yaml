@@ -42,55 +42,6 @@
 #Our site content types#
 ########################
 
-#DELME
-'Sfi.Sfi:WeTeach':
-  superTypes:
-    - 'TYPO3.Neos:Content'
-    - 'TYPO3.Neos.NodeTypes:Image'
-  childNodes:
-    picture:
-      type: 'TYPO3.Neos.NodeTypes:Image'
-  ui:
-    label: 'We teach'
-    icon: 'icon-edit'
-    group: contentBlocks
-  properties:
-    text:
-      type: string
-      defaultValue: '<h3>We teach title</h3><p>What we teah description here</p>'
-      ui:
-        inlineEditable: TRUE
-
-#DELME
-'Sfi.Sfi:Card':
-  superTypes:
-    - 'TYPO3.Neos:Content'
-    - 'TYPO3.Neos.NodeTypes:Image'
-  childNodes:
-    picture:
-      type: 'TYPO3.Neos.NodeTypes:Image'
-  ui:
-    label: 'Card'
-    icon: 'icon-edit'
-    group: contentBlocks
-  properties:
-    title:
-      type: string
-      defaultValue: '<h3>Title</h3>'
-      ui:
-        inlineEditable: TRUE
-    subtitle:
-      type: string
-      defaultValue: '<p>Subtitle here</p>'
-      ui:
-        inlineEditable: TRUE
-    text:
-      type: string
-      defaultValue: '<p>Card text here. Card text here. Card text here. Card text here.</p>'
-      ui:
-        inlineEditable: TRUE
-
-
 'Sfi.Sfi:QuoteBlock':
   superTypes:
     - 'TYPO3.Neos:Content'
@@ -115,33 +66,3 @@
       defaultValue: '<p>Enter quotation text here</p>'
       ui:
         inlineEditable: TRUE
-
-
-
-#DELME
-'Sfi.Sfi:QuoteAndPictureBlock':
-  superTypes:
-    - 'Sfi.Sfi:QuoteBlock'
-  childNodes:
-    picture:
-      type: 'TYPO3.Neos.NodeTypes:Image'
-  ui:
-    label: 'Quote with Picture'
-    icon: 'icon-edit'
-
-
-'Sfi.Sfi:TrusteeSection':
-  superTypes:
-    - 'Sfi.Widgets:TextWithImage'
-    - 'TYPO3.Neos.NodeTypes:Image'
-  ui:
-    label: 'Trustee Section'
-    icon: 'icon-edit'
-  properties:
-    anchorImage:
-      type: TYPO3\Media\Domain\Model\ImageVariant
-      ui:
-        label: 'Anchor Image'
-        reloadIfChanged: TRUE
-        inspector:
-          group: 'image'
