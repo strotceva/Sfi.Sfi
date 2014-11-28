@@ -3,8 +3,6 @@ section < page{
 	body{
 		templatePath = 'resource://Sfi.Sfi/Private/Templates/Pages/Section.html'
 
-		
-
 		node = ${q(node).get(0)}
 
 		title = ${q(node).property('title')}

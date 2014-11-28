@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 {namespace neos=TYPO3\Neos\ViewHelpers}
-{namespace ts=TYPO3\TypoScript\ViewHelpers}
-{namespace s=Sfi\Sfi\ViewHelpers}
 
 <f:section name="body">
 	<f:render partial="Header" arguments="{_all}"/>
@@ -18,20 +16,20 @@
 		<div class="row">
 			<div class="columns">
 				<div class="SectionLayout-Presentation">
-					<ts:render path="content.presentation" />
+					{content.presentation -> f:format.raw()}
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="large-8 columns">
 				<div class="SectionLayout-Content">
-					<ts:render path="content.main" />
+					{content.main -> f:format.raw()}
 				</div>			
 			</div>
 			<div class="large-4 columns">
 				{sectionMenu -> f:format.raw()}
 				<div class="SectionLayout-Sidebar">
-					<ts:render path="content.sidebar" />
+					{content.sidebar -> f:format.raw()}
 				</div>			
 			</div>
 		</div>

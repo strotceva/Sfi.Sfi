@@ -1,5 +1,5 @@
 #This is a default page object. It's being extended and never used directly.
-prototype(Sfi.Sfi:Page) < prototype(TYPO3.Neos:Page) {	
+prototype(Sfi.Sfi:Page) < prototype(TYPO3.Neos:Page) {
 	head {
 		titleTag.content = ${String.stripTags(q(node).property('title'))}
 		stylesheets.site = TYPO3.TypoScript:Template {
