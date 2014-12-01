@@ -71,3 +71,10 @@
 .SitemapMenu-SectionsWrap .SitemapMenu-Sections:nth-child(4) .SitemapMenu-Presentation{
 	background: $violet;
 }
+
+
+@media #{$small-only}{
+	.SitemapMenu-Sections{
+		float: none !important;
+	}
+}
