@@ -1,0 +1,12 @@
+.MediaAnnouncement-Date{
+	@extend .H4;
+}
+.MediaAnnouncement-Title{
+	@extend .H4Alt;
+}
+.MediaAnnouncement-Teaser{
+	@extend .H4Alt;
+}
+.MediaAnnouncement-Place{
+	@extend .Service--Small;
+}

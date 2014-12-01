@@ -1,43 +1,68 @@
 .Article{
 	margin-top: 2*$u;
-
-	.Figure figcaption{
-		background: $gray-bg--light;
-		color: $gray--dark;
-	}
 }
 .Article-Category{
 	@extend .H4;
 	color: $color-primary;
 	margin-bottom: 0;
 }
-.Article-Title{
-	@extend .H1Alt;
-	margin-top: 0;
-	margin-bottom: 0;
-}
 
-.Article-Bar{
-}
-.Article-Date{
-	@extend .ParagraphAlt--Small;
-	color: $color-primary;	
-}
-.Article-Author{
-	@extend .ParagraphAlt--Small;
-	color: $color-primary;
-}
 
-.Article-Teaser{
-	@extend .H4Alt;
-	text-align: center;
-	margin-bottom: 1.5*$u;
-}
-.Article-Lead{
-	@extend .Paragraph--Large;
-}
+
 
 .Article-CoverPhoto{
-	margin: 2*$u 0;
+	margin-bottom: 2*$u;
 }
 .Article-Gallery{}
+
+
+
+
+
+
+
+.NewsDetail-Article--Soft{
+	.Article-Title{
+		@extend .H1Alt;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.Article-Teaser{
+		@extend .H4Alt;
+		color: $gray--light;
+		text-align: center;
+		margin-bottom: 1.5*$u;
+	}
+	.Article-Lead{
+		@extend .ParagraphAlt--Large;
+	}
+
+	.Article-Bar{
+		border-top: 6px solid $red;
+		margin-top: 2*$u;
+	}
+	.Article-Date{
+		@extend .ParagraphAlt--Small;
+		color: $color-primary;	
+	}
+	.Article-Author{
+		@extend .ParagraphAlt--Small;
+		color: $color-primary;
+	}
+	.Article-AuthorLabel{
+		@extend .H5;
+		margin: 0;
+		padding-left: 2*$u;
+		padding-right: $u/2;
+		line-height: 1;
+		float: left;
+	}
+	.Article-AuthorName{
+		@extend .H6Alt;
+		margin: 0;
+		float: left;
+	}
+	.Article-CoverPhoto .Figure{
+		margin-top: 0;
+	}
+}

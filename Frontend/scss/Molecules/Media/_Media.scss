@@ -1,16 +1,14 @@
 .Media-Body{
-	background: $gray-bg--light;
-	padding: $u;
 }
 .Media-Title{
-	@extend .H6;
+	@extend .H4;
 }
 .Media-Teaser{
 	@extend .ParagraphAlt;
+	line-height: 1.3;
 }
 .Media-Date{
-	@extend .H6;
-	color: $color-primary;
+	@extend .Service;
 }
 .Media-Category{
 	@extend .H5;

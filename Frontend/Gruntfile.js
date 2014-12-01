@@ -4,6 +4,8 @@ module.exports = function (grunt) {
 			compass: {
 				files: "scss/**/*.scss",
 				tasks: ['compass:watch'],
+				debugInfo : true,
+				trace: true
 			},
 		},
 		bower_concat: {
@@ -35,19 +37,19 @@ module.exports = function (grunt) {
 					config: "config.rb"
 				}
 			}
-		},
-		browserSync: {
-			dev: {
-				bsFiles: {
-					src : 'Public/Built/app.css'
-				},
-				options: {
-					proxy: "dev.typo3-app:8080",
-					watchTask: true,
-					hostname: '0.0.0.0'
-				}
-			}
 		}
+	//	browserSync: {
+	//		dev: {
+	//			bsFiles: {
+	//				src : 'Public/Built/app.css'
+	//			},
+	//			options: {
+	//				proxy: "dev.typo3-app:8080",
+	//				watchTask: true,
+	//				hostname: '0.0.0.0'
+	//			}
+	//		}
+	//	}
 	});
 
 	// load npm tasks
@@ -55,7 +57,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-bower-concat');
-	grunt.loadNpmTasks('grunt-browser-sync');
+//	grunt.loadNpmTasks('grunt-browser-sync');
 
 	// create custom task-list
 	grunt.registerTask('default', ["compass"]);
