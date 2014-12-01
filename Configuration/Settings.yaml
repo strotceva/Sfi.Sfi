@@ -14,9 +14,9 @@ TYPO3:
       navigateComponent:
         nodeTree:
           loadingDepth: 1
-          presets:
-            default:
-            #  baseNodeType: 'TYPO3.Neos:Document,!Sfi.News:News'
+#          presets:
+#            default:
+#              baseNodeType: 'TYPO3.Neos:Document,!Sfi.News:News'
     nodeTypes:
       groups:
         contentBlocks:
