@@ -55,6 +55,7 @@ prototype(Sfi.Sfi:Page) < prototype(TYPO3.Neos:Page) {
 			main = ContentCollection {
 				nodePath = 'main'
 			}
+			# TODO: refactor into FooterGallery object
 			footerGallery = TYPO3.TypoScript:Tag{
 				tagName = 'ul'
 				attributes.class = 'FooterGallery small-block-grid-2 medium-block-grid-4 large-block-grid-6'
@@ -62,8 +63,8 @@ prototype(Sfi.Sfi:Page) < prototype(TYPO3.Neos:Page) {
 					itemRenderer = Sfi.Widgets:AutoRenderWithTag
 					collection = ${q(site).children('footerGallery').children().slice(0, String.toInteger(6)).get()}
 					prototype(TYPO3.Neos.NodeTypes:Image){
-						maximumWidth = 300
-						maximumHeight = 300
+						maximumWidth = 220
+						maximumHeight = 220
 						allowCropping = TRUE
 						hasCaption = FALSE
 					}

@@ -93,3 +93,12 @@
                 label: 'Image-Left'
               'Image-Right':
                 label: 'Image-Right'
+
+
+'Sfi.Sfi:Questions':
+  superTypes:
+    - 'TYPO3.Neos:Content'
+  ui:
+    label: 'Questions'
+    icon: 'icon-edit'
+    group: contentWidgets

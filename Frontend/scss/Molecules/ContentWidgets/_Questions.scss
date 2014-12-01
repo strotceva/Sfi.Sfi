@@ -1,0 +1,10 @@
+.Questions{
+	margin-top: 3*$u;
+	padding: 2*$u;
+	border-top: 5px solid $red;
+}
+.Questions .InlineLink{
+	display: inline-block;
+	font-size: rem-calc(21);
+	padding: $u 3*$u; 
+}

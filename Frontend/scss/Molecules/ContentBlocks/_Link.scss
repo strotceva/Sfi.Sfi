@@ -11,3 +11,15 @@
 	color: white;
 	text-align: center;
 }
+
+
+.ButtonLink{
+	@extend .Button;
+}
+
+.InlineLink{
+	@extend .Link;
+	&:after{
+		content: ' »';
+	}
+}

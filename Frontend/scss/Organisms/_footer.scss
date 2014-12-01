@@ -1,9 +1,41 @@
+
+
 .Footer{
-	background: $gray-bg--light;
+	background: #111;
+	margin-top: 3*$u;
 }
 
 .Footer-SiteTitle{
 	@extend .Paragraph--Large;
 	text-align: left !important;
-	color: $gray--light;
+	color: white;
+}
+
+.Footer-SiteLogo{
+	overflow: hidden;
+	padding: 2*$u 0;
+	svg.SiteLogo{
+		path{
+  			fill: white !important;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+.FooterGallery{
+	margin: 0 !important;
+}
+.FooterGallery .Figure{
+	display: block;
+	margin: 0;
+}
+.FooterGallery-Item{
+	padding: 0 !important;
 }
