@@ -16,7 +16,7 @@ TYPO3:
           loadingDepth: 1
           presets:
             default:
-              baseNodeType: 'TYPO3.Neos:Document,!Sfi.News:News'
+            #  baseNodeType: 'TYPO3.Neos:Document,!Sfi.News:News'
     nodeTypes:
       groups:
         contentBlocks:
