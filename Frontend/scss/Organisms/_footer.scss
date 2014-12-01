@@ -1,0 +1,9 @@
+.Footer{
+	background: $gray-bg--light;
+}
+
+.Footer-SiteTitle{
+	@extend .Paragraph--Large;
+	text-align: left !important;
+	color: $gray--light;
+}
