@@ -9,5 +9,10 @@
 		background: $red;
 		color: white !important;
 		padding: $u;
+		p{
+			color: inherit;
+			margin:0;
+			font-size: inherit;
+		}
 	}
 }

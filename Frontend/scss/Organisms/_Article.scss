@@ -1,11 +1,6 @@
 .Article{
 	margin-top: 2*$u;
 }
-.Article-Category{
-	@extend .H4;
-	color: $color-primary;
-	margin-bottom: 0;
-}
 
 
 
@@ -16,26 +11,6 @@
 .Article-Gallery{}
 
 
-
-
-
-
-
-.NewsDetail-Article--Soft{
-	.Article-Title{
-		@extend .H1Alt;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	.Article-Teaser{
-		@extend .H4Alt;
-		color: $gray--light;
-		text-align: center;
-		margin-bottom: 1.5*$u;
-	}
-	.Article-Lead{
-		@extend .ParagraphAlt--Large;
-	}
 
 	.Article-Bar{
 		border-top: 6px solid $red;
@@ -64,5 +39,38 @@
 	}
 	.Article-CoverPhoto .Figure{
 		margin-top: 0;
+	}
+
+
+.NewsDetail-Article--Soft{
+	.Article-Title{
+		@extend .H1Alt;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.Article-Teaser{
+		@extend .H4Alt;
+		color: $gray--light;
+		text-align: center;
+		margin-bottom: 1.5*$u;
+	}
+	.Article-Lead{
+		@extend .ParagraphAlt--XLarge;
+	}
+}
+
+.NewsDetail-Article--Hard{
+	.Article-Title{
+		@extend .H2;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.Article-Teaser{
+		@extend .H4Alt;
+		color: $gray--light;
+		margin-bottom: 1.5*$u;
+	}
+	.Article-Lead{
+		@extend .ParagraphAlt--Large;
 	}
 }

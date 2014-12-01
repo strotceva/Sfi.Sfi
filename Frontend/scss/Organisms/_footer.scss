@@ -1,7 +1,7 @@
 
 
 .Footer{
-	background: #111;
+	background: $gray--dark;
 	margin-top: 3*$u;
 }
 
@@ -19,6 +19,14 @@
   			fill: white !important;
 		}
 	}
+}
+
+.Footer-Description{
+	@extend .ParagraphAlt--Small;
+	line-height: 1.5;
+	margin-top: 0;
+	margin-bottom: 2*$u;
+	color: $gray-bg;
 }
 
 

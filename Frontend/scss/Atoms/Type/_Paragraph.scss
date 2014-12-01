@@ -30,4 +30,8 @@
 	color: black;
 }
 
-
+.ParagraphAlt--XLarge{
+	@extend .ParagraphAlt;
+	font-size: rem-calc(21);
+	color: black;
+}

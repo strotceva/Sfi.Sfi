@@ -19,6 +19,7 @@
 
 .InlineLink{
 	@extend .Link;
+	font-family: $fontFamily-alt;
 	&:after{
 		content: ' »';
 	}

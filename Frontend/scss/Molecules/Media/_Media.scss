@@ -4,8 +4,7 @@
 	@extend .H4;
 }
 .Media-Teaser{
-	@extend .ParagraphAlt;
-	line-height: 1.3;
+	@extend .ParagraphAlt--Small;
 }
 .Media-Date{
 	@extend .Service;
