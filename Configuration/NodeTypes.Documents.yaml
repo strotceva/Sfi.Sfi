@@ -7,6 +7,8 @@
   childNodes:
     main:
       type: 'TYPO3.Neos:ContentCollection'
+    footerGallery:
+      type: 'TYPO3.Neos:ContentCollection'
 
 'Sfi.Sfi:PagePresentation':
   ui:
