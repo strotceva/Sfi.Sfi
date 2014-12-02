@@ -10,7 +10,7 @@ $green: #82bc00;
 $violet: #835f87;
 
 
-$color-primary: $blue;
+$color-primary: $red;
 
 
 
@@ -35,7 +35,7 @@ $color-primary: $blue;
 
 @mixin colormix($pageid, $color){
 	#{$pageid}{
-		.Figcaption{
+		.Figure figcaption{
 			background-color: $color !important;
 		}
 		.Blockquote,
@@ -45,8 +45,7 @@ $color-primary: $blue;
 			border-color: $color !important;
 		}
 		.SectionMenu-Item:after,
-		.StyleSet-ModernModest .Headline-Title,
-		.StyleSet-ModernModest .Headline-Title,
+		.StyleSet-ModernModest .Headline-Title h2,
 		.slick-prev:before, .slick-next:before,
 		.slick-dots li.slick-active button:before,
 		.Sections--Pills .Sections-Anchor:after,{
