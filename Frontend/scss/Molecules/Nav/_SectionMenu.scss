@@ -13,10 +13,10 @@
 	padding-right: 2*$u; 
 	&:after{
 		content: ' »';
-        color: $red;
+        color: $color-primary;
 	}
 }
 
 .SectionMenu-Item.current{
-	color: $red;
+	color: $color-primary;
 }

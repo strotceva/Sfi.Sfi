@@ -18,14 +18,14 @@ body{
 		}
 		li.slick-active button:before{
 			opacity: 1;
-			color: $red;
+			color: $color-primary;
 		}
 	}
 	.slick-prev, .slick-next{
 		top: 9px;
 		margin-top: 0;
 		&:before{
-			color: $red;
+			color: $color-primary;
 			opacity: 1;
 		}
 	}

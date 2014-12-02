@@ -1,7 +1,7 @@
 .Button{
 	@extend .Service--Small;
 	margin: 8px 0 !important;
-	background: $red;
+	background: $color-primary;
 	color: white;
 	padding: $u/2 0;
 	cursor: pointer;
@@ -10,7 +10,7 @@
 .Button.English{
 	@extend .Service;
 	margin: 6px 0 !important;
-	color: $red;
+	color: $color-primary;
 	background: initial;
 	padding: $u/2 0;
 	cursor: pointer;

@@ -10,7 +10,7 @@
 
 .SitemapMenu .icon-right-dir{
 	position: absolute;
-	color: $red;
+	color: $color-primary;
 	left: 12px;
 	top: 5px;
 }
@@ -22,7 +22,7 @@
 	padding: $u/2 3*$u;
 	cursor: pointer;
 	&:hover{
-		color: $red;
+		color: $color-primary;
 	}
 }
 .SitemapMenu-FollowLinks{
@@ -44,7 +44,7 @@
 	@extend .H3Alt;
 	color: white;
 	text-align: center;
-	background: $red;
+	background: $color-primary;
 	line-height: $lineHeight-single;
 	padding: $u;
 }

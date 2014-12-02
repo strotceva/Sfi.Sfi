@@ -57,7 +57,7 @@
 		@extend .Service;
 		&:after{
 			content: ' »';
-            color: $red;
+            color: $color-primary;
 		}
 	}
     .Sections-Tabs{
