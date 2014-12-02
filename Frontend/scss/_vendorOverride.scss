@@ -1,21 +1,15 @@
 body{
 	.slick-list{
-		padding-bottom: 36px;
-		border-bottom: 1px solid $gray-line;
-	}
-	.slick-list:after{
-		content: '';
-		position: absolute;
-		width: 100%;
-		border-bottom: 1px solid $gray-line;
+		padding-top: 36px;
+		border-top: 1px solid $gray-line;
 	}
 	.slick-dots{
 		width: 92%;
 		margin-top: 0;
 		margin-left: 16px;
 		margin-right: 16px;
-		bottom: 8px;
-		top: initial;
+		top: 3px;
+		bottom: initial;
 		li button:before{
 			font-size: 8px;
 			opacity: 1;
@@ -27,8 +21,7 @@ body{
 		}
 	}
 	.slick-prev, .slick-next{
-		bottom: 9px;
-		top: initial;
+		top: 9px;
 		margin-top: 0;
 		&:before{
 			color: $red;
