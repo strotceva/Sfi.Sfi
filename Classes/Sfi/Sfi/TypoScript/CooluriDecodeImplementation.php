@@ -47,15 +47,16 @@ class CooluriDecodeImplementation extends AbstractTypoScriptObject {
 	 */
 	public function evaluate() {
 		$url = $this->getUrl();
-		$url = "www.sfi.ru@".$url;
-		$sql = "SELECT params FROM link_cache WHERE url='".$url."'";
+		if ($url) {
+			$url = "www.sfi.ru@".$url;
+			$sql = "SELECT params FROM link_cache WHERE url='".$url."'";
 
-	    $statement = $this->entityManager->getConnection()->prepare($sql);
-	    $statement->execute();
-	    $result = $statement->fetchAll();
-	    $params = unserialize($result[0]['params']);
-	    return $params['tx_ttnews[tt_news]'];
-			
+		    $statement = $this->entityManager->getConnection()->prepare($sql);
+		    $statement->execute();
+		    $result = $statement->fetchAll();
+		    $params = unserialize($result[0]['params']);
+		    return $params['tx_ttnews[tt_news]'];
+		}
 	}
 
 }

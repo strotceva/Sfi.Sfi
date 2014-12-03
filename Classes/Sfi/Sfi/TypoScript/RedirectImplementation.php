@@ -39,7 +39,7 @@ class RedirectImplementation extends AbstractTypoScriptObject {
 	public function evaluate() {
 		$url = $this->getUrl();
 		if ($url) {
-			//header('Location: ' . $url, true, 301);
+			header('Location: ' . $url, true, 301);
 			die("Redirect successful: ".$url);
 		} else {
 			die("No url found");
