@@ -31,6 +31,13 @@
 
 
 var onReadyPlugins = function() {
+    audiojs.events.ready(function() {
+        path = '/_Resources/Static/Packages/Sfi.Sfi/Built/';
+        var as = audiojs.createAll({
+            imageLocation: path + 'player-graphics.gif',
+            swfLocation: path + 'audiojs.swf',
+        });
+    });
     $('.js-SitemapMenu-Toggle').click(function(e){
         e.preventDefault();
         e.stopPropagation();

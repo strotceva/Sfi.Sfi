@@ -1,4 +1,11 @@
 
+'Sfi.Sfi:Redirect':
+  ui:
+    label: 'Redirect from old news'
+  superTypes:
+    - 'TYPO3.Neos.NodeTypes:Page'
+
+
 'Sfi.Sfi:PageMain':
   ui:
     label: 'Page: Main'

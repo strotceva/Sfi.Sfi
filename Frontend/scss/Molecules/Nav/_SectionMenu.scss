@@ -17,6 +17,6 @@
 	}
 }
 
-.SectionMenu-Item.current{
+.SectionMenu-Item.current,.SectionMenu-Item:hover{
 	color: $color-primary;
 }

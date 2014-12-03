@@ -60,6 +60,9 @@
             color: $color-primary;
 		}
 	}
+    .Sections-Anchor.isActive, .Sections-Anchor:hover{
+        color: $color-primary;
+    }
     .Sections-Tabs{
         margin-bottom: 3*$u;
     }
@@ -97,7 +100,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    border-top: 5px solid;
+    border-top: 10px solid;
 }
 
 .SectionWithImageAccordionAnchor{
@@ -133,6 +136,14 @@
         width: 120px !important;
     }
     .SectionWithImageTabAnchor--Variant2{
-        width: 200px !important;
+        width: 120px !important;
+    }
+}
+@media #{$large-up}{
+    .SectionWithImageTabAnchor--Variant1{
+        width: 120px !important;
+    }
+    .SectionWithImageTabAnchor--Variant2{
+        width: 190px !important;
     }
 }

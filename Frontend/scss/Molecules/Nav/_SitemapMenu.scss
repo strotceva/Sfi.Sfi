@@ -47,6 +47,10 @@
 	background: $color-primary;
 	line-height: $lineHeight-single;
 	padding: $u;
+	transition: all 0.5s;
+}
+.SitemapMenu-Presentation:hover{
+	opacity: 0.7;
 }
 
 .SitemapMenu-Section{
@@ -56,6 +60,10 @@
 
 .SitemapMenu-Sections:hover{
 	background: white;
+}
+
+.SitemapMenu-Section:hover{
+	text-decoration: underline;
 }
 
 // TODO: Could be refacotred with a section color mixin
