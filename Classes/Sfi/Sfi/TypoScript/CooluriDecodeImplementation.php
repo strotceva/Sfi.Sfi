@@ -51,7 +51,7 @@ class CooluriDecodeImplementation extends AbstractTypoScriptObject {
 			if (substr($url, -1) != "/") {
 				$url = $url . "/";
 			}
-			$url = "www.sfi.ru@".$url;
+			$url = "www.sfi.ru@statja/".$url;
 			$sql = "SELECT params FROM link_cache WHERE url='".$url."'";
 
 		    $statement = $this->entityManager->getConnection()->prepare($sql);
