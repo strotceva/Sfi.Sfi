@@ -48,6 +48,9 @@ class CooluriDecodeImplementation extends AbstractTypoScriptObject {
 	public function evaluate() {
 		$url = $this->getUrl();
 		if ($url) {
+			if (substr($url, -1) != "/") {
+				$url = $url . "/";
+			}
 			$url = "www.sfi.ru@".$url;
 			$sql = "SELECT params FROM link_cache WHERE url='".$url."'";
 
