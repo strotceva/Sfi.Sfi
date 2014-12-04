@@ -62,13 +62,16 @@ class CooluriDecodeImplementation extends AbstractTypoScriptObject {
 			    if($params['tx_ttnews[tt_news]']){
 			    	return $params['tx_ttnews[tt_news]'];
 			    } else {
-			    	die('Ссылка не найдена! (no param found)');
+			    	header("HTTP/1.0 404 Not Found");
+			    	die('Ссылка не найдена! Мы переехали на новый сайт, что-то могло потеряться по дороге... <a href="http://sfi.ru">Вернуться на главную страницу</a> <span style="color:white">(no param found)</span>');
 			    }
 		    } else {
-		    	die('Ссылка не найдена! (no sql result)');
+		    	header("HTTP/1.0 404 Not Found");
+		    	die('Ссылка не найдена! Мы переехали на новый сайт, что-то могло потеряться по дороге... <a href="http://sfi.ru">Вернуться на главную страницу</a> <span style="color:white">(no sql result)</span>');
 		    }
 		}
-		die('Ссылка не найдена! (url not provided)');
+		header("HTTP/1.0 404 Not Found");
+		die('Ссылка не найдена! Мы переехали на новый сайт, что-то могло потеряться по дороге... <a href="http://sfi.ru">Вернуться на главную страницу</a> <span style="color:white">(url not provided)</span>');
 	}
 
 }
