@@ -8,6 +8,14 @@ prototype(Sfi.Sfi:CooluriDecode){
 redirect = Sfi.Sfi:Redirect{
 	@override.newsuid = Sfi.Sfi:CooluriDecode{
 		url = ${request.arguments.url}
+		@cache {
+			mode = 'uncached'
+			context {
+				1 = 'node'
+				2 = 'documentNode'
+				3 = 'site'
+			}
+		}
 	}
 	url = TYPO3.Neos:NodeUri{
 		node = ${q(site).find('[instanceof Sfi.News:AbstractNews]').filter('[originalIdentifier = "' + newsuid + '"]').get(0)}

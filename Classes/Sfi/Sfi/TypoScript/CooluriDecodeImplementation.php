@@ -55,6 +55,9 @@ class CooluriDecodeImplementation extends AbstractTypoScriptObject {
 		    $statement->execute();
 		    $result = $statement->fetchAll();
 		    $params = unserialize($result[0]['params']);
+		    if(!$params['tx_ttnews[tt_news]']){
+		    	die('Ссылка не найдена!');
+		    }
 		    return $params['tx_ttnews[tt_news]'];
 		}
 	}

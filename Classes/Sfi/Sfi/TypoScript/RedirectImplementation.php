@@ -42,7 +42,7 @@ class RedirectImplementation extends AbstractTypoScriptObject {
 			header('Location: ' . $url, true, 301);
 			die("Redirect successful: ".$url);
 		} else {
-			die("No url found");
+			die("Ссылка не найдена");
 		}
 	}
 
