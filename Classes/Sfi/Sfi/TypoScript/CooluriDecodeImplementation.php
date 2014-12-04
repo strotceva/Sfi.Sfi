@@ -54,12 +54,14 @@ class CooluriDecodeImplementation extends AbstractTypoScriptObject {
 		    $statement = $this->entityManager->getConnection()->prepare($sql);
 		    $statement->execute();
 		    $result = $statement->fetchAll();
-		    $params = unserialize($result[0]['params']);
-		    if(!$params['tx_ttnews[tt_news]']){
-		    	die('Ссылка не найдена!');
+		    if($result){
+		    	$params = unserialize($result[0]['params']);
+			    if($params['tx_ttnews[tt_news]']){
+			    	return $params['tx_ttnews[tt_news]'];
+			    }
 		    }
-		    return $params['tx_ttnews[tt_news]'];
 		}
+		die('Ссылка не найдена! '.print_r($params,1));
 	}
 
 }
