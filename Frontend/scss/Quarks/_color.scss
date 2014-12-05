@@ -58,7 +58,7 @@ $color-primary: $red;
 
 //main
 @include colormix("body",$color-primary);
-@include colormix("#sfi-today",$red);
-@include colormix("#uchyoba-v-sfi",$blue);
-@include colormix("#nauchnie-proekti",$green);
-@include colormix("#prosveshenie-i-dialog",$violet);
+@include colormix("#about",$red);
+@include colormix("#study",$blue);
+@include colormix("#science",$green);
+@include colormix("#projects",$violet);
