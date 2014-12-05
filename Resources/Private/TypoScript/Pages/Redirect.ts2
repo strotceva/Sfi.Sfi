@@ -1,3 +1,4 @@
+# Use proper Neos redirects!
 prototype(Sfi.Sfi:Redirect){
 	@class = 'Sfi\\Sfi\\TypoScript\\RedirectImplementation'
 }
