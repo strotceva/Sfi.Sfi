@@ -33,8 +33,6 @@ class RedirectImplementation extends AbstractTypoScriptObject {
 	/**
 	 * Render the redirect.
 	 *
-	 * @return string The rendered URI or NULL if no URI could be resolved for the given node
-	 * @throws NeosException
 	 */
 	public function evaluate() {
 		$url = $this->getUrl();
