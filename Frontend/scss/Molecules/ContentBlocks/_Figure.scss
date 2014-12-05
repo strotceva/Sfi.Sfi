@@ -1,10 +1,10 @@
 .Figure{
 	margin: $u 0;
-	display: table;
+	// display: table;
 	figcaption{
 		@extend .ParagraphAlt;
 		margin: 0;
-		display: table-caption;
+		// display: table-caption;
 		caption-side: bottom;
 		background: $color-primary;
 		color: white !important;
