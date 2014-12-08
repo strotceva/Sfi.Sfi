@@ -1,9 +1,0 @@
-prototype(Sfi.Sfi:HideFor) < prototype(TYPO3.Neos:Content) {
-    templatePath = 'resource://Sfi.Sfi/Private/Templates/Molecules/HideFor.html'
-    attributes {
-		class = ${q(node).property('class')}
-	}
-	content = TYPO3.Neos:ContentCollection {
-		nodePath = '.'
-	}
-}
