@@ -2,7 +2,6 @@
  * Root TypoScript template for the SFI v.3.0 site
  */
 
-#include: NodeTypes/**/*.ts2
 include: Pages/**/*.ts2
 
 
