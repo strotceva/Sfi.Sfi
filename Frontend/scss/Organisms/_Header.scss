@@ -16,21 +16,24 @@
 	top: 0;
 }
 
-.Header-SecondaryMenu{
-	float: right;
-	margin-left: $u;
-	margin-right: $u;
-	margin-top: -$u/2;
-	margin-bottom: -$u/2;
+.Header-AdditionalInfo{
+	overflow: auto;
+	font-size: rem-calc(13);
+	text-decoration: underline;
 }
-.Header-Contacts{
-	float: right;
-	margin-left: $u;
-	margin-right: $u;
-	margin-top: -$u/2;
-	margin-bottom: -$u/2;
-	font-size: rem-calc(14);
-	p{
+@media #{$medium-up}{
+	.Header-AdditionalInfo{
+		font-size: rem-calc(14);
+	}
+}
+.Header-AdditionalInfo > *{
+	float: left;
+	width: 50%;
+	//Dirty
+	li,p{
 		margin: $u/2 0;
 	}
+}
+.Header-AdditionalInfo > *:nth-child(2){
+	padding-left: 9px;
 }

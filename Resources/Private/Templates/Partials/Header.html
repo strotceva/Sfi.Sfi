@@ -2,23 +2,38 @@
 <header class="Header">
 	<div class="row">
 		<div class="columns">
-			<div class="Header-Wrap">
-				<div class="marginTop-sesquialteral marginBottom-half">
-					<div class="Header-Logo">
-						<neos:link.node node="~" title="На главную"><f:render partial="Svg/SiteLogo"/></neos:link.node>
+			<div class="MainMenu js-MainMenu">
+				
+				<div class="js-MainMenu-Wrap">
+					<div class="overflow-hidden">
+						<div class="MainMenu-TopLeft marginTop-sesquialteral marginBottom-half">
+							<div class="Header-Logo">
+								<neos:link.node node="~" title="На главную"><f:render partial="Svg/SiteLogo"/></neos:link.node>
+							</div>
+						</div>
+						<div class="MainMenu-TopRight marginTop-single marginBottom-half">
+							<div class="MainMenu-HiddenOnSmall Header-AdditionalInfo">
+								<div class="Header-Contacts">
+									<p>Москва, Покровка, 29</p>
+									<p><a href="tel:+74956230380">+7 495 623 0380</a></p>
+									<p><a href="mailto:info@sfi.ru">info@sfi.ru</a></p>
+								</div>
+								<div class="Header-SecondaryMenu">
+									{secondaryMenu -> f:format.raw()}
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="Header-Contacts hide large-2">
-						<p>Москва, Покровка, 29</p>
-						<p><a href="tel:+74956230380">+7 495 623 0380</a></p>
-						<p><a href="mailto:info@sfi.ru">info@sfi.ru</a></p>
-					</div>
-					<div class="Header-SecondaryMenu hide large-2">
-						{secondaryMenu -> f:format.raw()}
+					<div class="">
+						<div class="hide  MainMenu-FollowLinks">
+							<f:render partial="FollowLinks" />
+						</div>
+						<div href="#menu" class="MainMenu-Toggle js-MainMenu-Toggle"><f:render partial="Svg/IconMenu"/></div>
+						{mainMenu -> f:format.raw()}
 					</div>
 				</div>
 			</div>
 
-			{mainMenu -> f:format.raw()}
 			<f:if condition="{breadcrumbMenu}">
 				{breadcrumbMenu -> f:format.raw()}
 			</f:if>

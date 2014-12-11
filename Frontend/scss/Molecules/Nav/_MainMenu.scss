@@ -38,6 +38,16 @@
 	}
 }
 
+.Page--Main .MainMenu-Toggle{
+	display: none;
+}
+@media #{$large-up}{
+	.Page--Main .MainMenu-Toggle{
+		display: block;
+	}
+}
+
+
 
 // TODO: Could be refacotred with a section color mixin
 .MainMenu-Column:nth-child(1) .MainMenu-Presentation{
@@ -67,11 +77,13 @@
 
 
 
-.MainMenu-SectionsWrap,.MainMenu-Wrap{
+.MainMenu-Hidden,.MainMenu-HiddenOnSmall,.MainMenu-AlwaysHiddenOnSmall{
 	display: none;
 }
-.js-MainMenu.isActive .MainMenu-Wrap{
-	display: block;
+.js-MainMenu.isActive,.Page--Main{
+	.MainMenu-Hidden, .MainMenu-HiddenOnSmall{
+		display: block;
+	}
 }
 
 @media #{$medium-up}{
@@ -86,29 +98,34 @@
 	}
 }
 @media #{$large-up}{
+	.MainMenu-TopLeft{
+		float: left;
+	}
+	.MainMenu-TopRight{
+		float: right;
+		width: 33%;
+	}
+
+
 	.MainMenu-Column{
 		float: left;
 		width: 200px;
 		margin-right: 18px;
 	}
 	.js-MainMenu.isActive {
-		.MainMenu-SectionsWrap{
+		.MainMenu-SectionsWrap,.MainMenu-AlwaysHiddenOnSmall{
 			display: block;
 		}
 	}
-
-	.MainMenu-Wrap{
+	.MainMenu-HiddenOnSmall{
 		display: block;
+	}
+	.MainMenu-Wrap{
 		margin-left: 70px;
 	}
 
-	.MainMenu-ToggleWrap{
-		max-width: rem-calc(1200);
-		position: relative;
-	}
 	.MainMenu-Toggle{
-		left: 0;
-		top: 0;
-		right: initial;
+		float: left;
+		position: initial;
 	}
 }

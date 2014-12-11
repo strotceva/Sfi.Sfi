@@ -33,7 +33,7 @@ prototype(Sfi.Sfi:Page) < prototype(TYPO3.Neos:Page) {
 		}
 		secondaryMenu = Menu{
 			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/SecondaryMenu.html'
-			itemCollection = ${q(site).children('links').children('[instanceof TYPO3.Neos:Document]').get()}
+			itemCollection = ${q(site).children('links').children().get()}
 		}
 		sectionMenu = Menu
 		sectionMenu {
