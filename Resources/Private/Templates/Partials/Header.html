@@ -7,21 +7,18 @@
 					<div class="Header-Logo">
 						<neos:link.node node="~" title="На главную"><f:render partial="Svg/SiteLogo"/></neos:link.node>
 					</div>
-					<div class="Header-Contacts show-for-large-up large-2">
+					<div class="Header-Contacts hide large-2">
 						<p>Москва, Покровка, 29</p>
 						<p><a href="tel:+74956230380">+7 495 623 0380</a></p>
 						<p><a href="mailto:info@sfi.ru">info@sfi.ru</a></p>
 					</div>
-					<div class="Header-SecondaryMenu show-for-large-up large-2">
+					<div class="Header-SecondaryMenu hide large-2">
 						{secondaryMenu -> f:format.raw()}
-					</div>
-					<div class="Header-Menu marginTop-sesquialteral hide-for-large-up">
-						<a href="#menu" class="js-SitemapMenu-Toggle"><f:render partial="Svg/IconMenu"/></a>
 					</div>
 				</div>
 			</div>
 
-	{sitemapMenu -> f:format.raw()}
+			{mainMenu -> f:format.raw()}
 			<f:if condition="{breadcrumbMenu}">
 				{breadcrumbMenu -> f:format.raw()}
 			</f:if>

@@ -38,15 +38,17 @@ var onReadyPlugins = function() {
             swfLocation: path + 'audiojs.swf',
         });
     });
-    $('.js-SitemapMenu-Toggle').click(function(e){
+
+    //MainMenu toggle
+    $('.js-MainMenu-Toggle').click(function(e){
         e.preventDefault();
         e.stopPropagation();
-        $('.js-SitemapMenu').toggleClass('isActive');
+        $('.js-MainMenu').toggleClass('isActive');
     });
     $('body').click(function(e){
-        $('.js-SitemapMenu').removeClass('isActive');
+        $('.js-MainMenu').removeClass('isActive');
     });
-    $('.js-SitemapMenu-SectionsWrap').click(function(e){
+    $('.js-MainMenu-Wrap').click(function(e){
         e.stopPropagation();
     });
 

@@ -1,36 +1,114 @@
-.MainMenu-Item a{
+// Adjust gaps for blockgrid in menus
+
+.MainMenu.isActive .icon-right-dir:before { content: '\e80e'; }
+
+.MainMenu-FollowLinks{
+	margin: 5px 0;
+}
+
+
+.MainMenu-Presentation{
 	display: block;
 	@extend .H3Alt;
+	font-size: rem-calc(21);
 	color: white;
-	padding: 1.5*$u $u;
-	margin: 2px 0 !important;
 	text-align: center;
-	color: white;
+	background: $color-primary;
+	line-height: $lineHeight-single;
+	padding: 16px;
+	// Prevents margin collapse on medium-up
+	margin: 0;
+	margin-bottom: $u;
 	transition: all 0.5s;
+	&:hover{
+		opacity: 0.7;
+	}
 }
-.MainMenu-Item.current a,.MainMenu-Item.active a{
-	text-decoration: underline;
+
+.MainMenu-Toggle{
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	cursor: pointer;
+	// Stay on top of menu to render clicks
+	z-index: 110;
+	display: inline-block;
+	.IconMenu{
+		display: inline-block;
+	}
 }
-.MainMenu-Item:hover a{
-	opacity: 0.7;
-	text-decoration: underline;
-}
-.MainMenu .MainMenu-Item:nth-child(1) a{
+
+
+// TODO: Could be refacotred with a section color mixin
+.MainMenu-Column:nth-child(1) .MainMenu-Presentation{
 	background: $red;
 }
-.MainMenu .MainMenu-Item:nth-child(2) a{
+.MainMenu-Column:nth-child(2) .MainMenu-Presentation{
 	background: $blue;
 }
-.MainMenu .MainMenu-Item:nth-child(3) a{
+.MainMenu-Column:nth-child(3) .MainMenu-Presentation{
 	background: $green;
 }
-.MainMenu .MainMenu-Item:nth-child(4) a{
+.MainMenu-Column:nth-child(4) .MainMenu-Presentation{
 	background: $violet;
 }
 
-@media #{$small-only}{
-	.MainMenu-Item{
-		float: none !important;
-		margin-top: $u/2;
+
+
+.MainMenu-Level2Item{
+	@extend .ParagraphAlt--Small;
+	display: block;
+}
+
+
+
+
+
+
+
+
+.MainMenu-SectionsWrap,.MainMenu-Wrap{
+	display: none;
+}
+.js-MainMenu.isActive .MainMenu-Wrap{
+	display: block;
+}
+
+@media #{$medium-up}{
+	.MainMenu-Column{
+		float: left;
+		width: calc(50% - 18px);
+		margin-right: 18px;
+	}
+	.MainMenu-Wrap{
+		margin-right: -18px;
+		overflow: hidden;
+	}
+}
+@media #{$large-up}{
+	.MainMenu-Column{
+		float: left;
+		width: 200px;
+		margin-right: 18px;
+	}
+	.js-MainMenu.isActive {
+		.MainMenu-SectionsWrap{
+			display: block;
+		}
+	}
+
+	.MainMenu-Wrap{
+		display: block;
+		margin-left: 70px;
+	}
+
+	.MainMenu-ToggleWrap{
+		max-width: rem-calc(1200);
+		position: relative;
+	}
+	.MainMenu-Toggle{
+		left: 0;
+		top: 0;
+		right: initial;
 	}
 }

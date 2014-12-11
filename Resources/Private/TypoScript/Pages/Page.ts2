@@ -25,16 +25,11 @@ prototype(Sfi.Sfi:Page) < prototype(TYPO3.Neos:Page) {
 		partialRootPath = 'resource://Sfi.Sfi/Private/Templates/Partials'
 		sectionName = 'body'
 
-		sitemapMenu = Menu{
-			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/SitemapMenu.html'
+		mainMenu = Menu{
+			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/MainMenu.html'
 			partialRootPath = 'resource://Sfi.Sfi/Private/Templates/Partials'
 			entryLevel = 1
 			maximumLevels = 2
-		}
-		mainMenu = Menu{
-			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/MainMenu.html'
-			entryLevel = 1
-			maximumLevels = 1
 		}
 		secondaryMenu = Menu{
 			templatePath = 'resource://Sfi.Sfi/Private/Templates/TypoScriptObjects/SecondaryMenu.html'
