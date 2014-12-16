@@ -1,6 +1,7 @@
 TYPO3:
   Neos:
     typoScript:
+      enableObjectTreeCache: TRUE
       autoInclude:
         'Sfi.Sfi': TRUE
     userInterface:
