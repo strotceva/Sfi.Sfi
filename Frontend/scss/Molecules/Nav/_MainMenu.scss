@@ -22,7 +22,8 @@
 	font-size: rem-calc(21);
 	text-align: center;
 	line-height: $lineHeight-single;
-	padding: 16px;
+	padding: 16px 0;
+	padding-right: 16px;
 	// Prevents margin collapse on medium-up
 	margin: 0;
 	transition: all 0.5s;
@@ -78,7 +79,11 @@
 @media #{$medium-up}{
 	.MainMenu-Column{
 		float: left;
-		margin-right: 18px;
+		width: 25%;
+		padding-right: 18px;
+	}
+	.MainMenu-Presentation{
+		text-align: left;
 	}
 	.MainMenu-Wrap{
 		margin-right: -18px;
@@ -94,11 +99,6 @@
 		width: 33%;
 	}
 
-
-	.MainMenu-Column{
-		float: left;
-		margin-right: 18px;
-	}
 	.js-MainMenu.isActive {
 		.MainMenu-SectionsWrap,.MainMenu-AlwaysHiddenOnSmall{
 			display: block;
