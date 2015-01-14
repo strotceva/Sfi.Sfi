@@ -2,6 +2,7 @@
 	@extend .ParagraphAlt;
 	text-transform: uppercase;
 	font-weight: bold;
+	letter-spacing: 1px;
 }
 .Service--Large {
 	@extend .Service;
@@ -12,9 +13,16 @@
 	font-size: rem-calc(12);
 }
 
+.ServiceClassic {
+	@extend .Paragraph;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
 .ServiceLight {
 	@extend .ParagraphAlt;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 .ServiceTiny {
 	@extend .Paragraph;
