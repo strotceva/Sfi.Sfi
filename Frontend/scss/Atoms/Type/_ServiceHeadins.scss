@@ -1,23 +1,31 @@
-.Service{
+.Service {
 	@extend .ParagraphAlt;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.Service--Large{
+.Service--Large {
 	@extend .Service;
 	font-size: rem-calc(18);
 }
-.Service--Small{
+.Service--Small {
 	@extend .Service;
 	font-size: rem-calc(12);
 }
 
-.ServiceEm{
+.ServiceLight {
+	@extend .ParagraphAlt;
+	text-transform: uppercase;
+}
+.ServiceTiny {
+	@extend .Paragraph;
+	font-size: rem-calc(10);
+}
+.ServiceEm {
 	@extend .Paragraph--Small;
 	font-style: italic;
 }
 
 # TODO: Move me to molecules
-.PageTitle{
+.PageTitle {
 	@extend .H1Alt;
 }
