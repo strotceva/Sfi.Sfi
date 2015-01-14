@@ -79,7 +79,6 @@
 @media #{$medium-up}{
 	.MainMenu-Column{
 		float: left;
-		width: 25%;
 		padding-right: 18px;
 	}
 	.MainMenu-Presentation{
@@ -100,6 +99,9 @@
 	}
 
 	.js-MainMenu.isActive {
+		.MainMenu-Column{
+			width: 25%;
+		}
 		.MainMenu-SectionsWrap,.MainMenu-AlwaysHiddenOnSmall{
 			display: block;
 		}

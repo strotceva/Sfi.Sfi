@@ -4,8 +4,9 @@
 	height:100%;
 }
 
-@media #{$large-up} {
+@media #{$large-up}{
 	.SiteLogo{
-		max-width: 400px;
+		width: 500px;
+		max-width: initial;
 	}
 }

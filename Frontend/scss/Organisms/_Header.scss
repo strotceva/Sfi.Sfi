@@ -7,13 +7,6 @@
 	overflow: auto;
 }
 
-.Header-Logo{
-}
-@media #{$large-up}{
-	.Header-Logo{
-		width: 400px;
-	}
-}
 .Header-Menu{
 	position: absolute; 
 	right: 0; 
