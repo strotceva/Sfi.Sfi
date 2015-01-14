@@ -37,7 +37,14 @@ module.exports = function (grunt) {
 					environment: 'development',
 					config: "config.rb"
 				}
-			}
+			},
+			compile: {
+                                options: {
+                                        environment: 'development',
+                                        config: "config.rb"
+                                }
+                        }
+
 		}
 	//	browserSync: {
 	//		dev: {
