@@ -1,18 +1,39 @@
-.Service{
+.Service {
 	@extend .ParagraphAlt;
-	color: $gray--light;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.Service--Large {
+	@extend .Service;
+	font-size: rem-calc(18);
+}
+.Service--Small {
+	@extend .Service;
+	font-size: rem-calc(12);
 }
 
-.Service--Small{
-	@extend .ParagraphAlt--Small;
-	color: $gray--light;
+.ServiceClassic {
+	@extend .Paragraph;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
-.ServiceEm{
+.ServiceLight {
+	@extend .ParagraphAlt;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.ServiceTiny {
+	@extend .Paragraph;
+	font-size: rem-calc(10);
+}
+.ServiceEm {
+	@extend .Paragraph--Small;
 	font-style: italic;
-	color: $gray--light;
 }
 
-.PageTitle{
+# TODO: Move me to molecules
+.PageTitle {
 	@extend .H1Alt;
 }
