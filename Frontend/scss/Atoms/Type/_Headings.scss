@@ -1,41 +1,36 @@
 
-%mainHeadings{
+%mainHeadings {
 	margin: $u auto;
 	font-family: $fontFamily-alt;
+	font-weight: bold;
 	color: $gray--dark;
 	line-height: $lineHeight-tight;
 }
-.H1{
+.H0 {
+	@extend %mainHeadings;
+	font-size: rem-calc(64);
+}
+.H1 {
 	@extend %mainHeadings;
 	font-size: rem-calc(48);
-	font-weight: bold;
 }
-.H2{
+.H2 {
 	@extend %mainHeadings;
 	font-size: rem-calc(36);
-	font-weight: bold;
 }
-.H3{
+.H3 {
 	@extend %mainHeadings;
 	font-size: rem-calc(24);
-	font-weight: bold;
 }
-.H4{
+.H4 {
 	@extend %mainHeadings;
 	font-size: rem-calc(18);
-	font-weight: bold;
 }
-.H5{
+.H5 {
 	@extend %mainHeadings;
-	font-size: rem-calc(18);
-	font-variant: small-caps;
-	text-transform: lowercase;
-	letter-spacing: 1px;
-	color: $gray--dark;
+	font-size: rem-calc(14);
 }
-.H6{
+.H6 {
 	@extend %mainHeadings;
-	font-size: rem-calc(16);
-	font-weight: bold;
-	font-style: normal;
+	font-size: rem-calc(12);
 }
