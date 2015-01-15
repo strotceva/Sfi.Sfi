@@ -6,17 +6,27 @@
 	color: $gray--dark;
 	line-height: $lineHeight-tight;
 }
+// Not used yet, consider deprication
 .H0 {
 	@extend %mainHeadings;
-	font-size: rem-calc(64);
+	font-size: rem-calc(36);
+	@media #{$medium-up}{
+		font-size: rem-calc(64);
+	}
 }
 .H1 {
 	@extend %mainHeadings;
-	font-size: rem-calc(48);
+	font-size: rem-calc(36);
+	@media #{$medium-up}{
+		font-size: rem-calc(48);
+	}
 }
 .H2 {
 	@extend %mainHeadings;
-	font-size: rem-calc(36);
+	font-size: rem-calc(24);
+	@media #{$medium-up}{
+		font-size: rem-calc(36);
+	}
 }
 .H3 {
 	@extend %mainHeadings;

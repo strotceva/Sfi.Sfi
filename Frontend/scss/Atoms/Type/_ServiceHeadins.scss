@@ -6,7 +6,10 @@
 }
 .Service--Large {
 	@extend .Service;
-	font-size: rem-calc(18);
+	font-size: rem-calc(14);
+	@media #{$medium-up}{
+		font-size: rem-calc(18);
+	}
 }
 .Service--Small {
 	@extend .Service;
@@ -31,9 +34,5 @@
 .ServiceEm {
 	@extend .Paragraph--Small;
 	font-style: italic;
-}
-
-# TODO: Move me to molecules
-.PageTitle {
-	@extend .H1Alt;
+	font-size: rem-calc(14);
 }

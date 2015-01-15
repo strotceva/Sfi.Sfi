@@ -18,11 +18,10 @@
 
 .MainMenu-Presentation{
 	display: block;
-	@extend .H3Alt;
-	font-size: rem-calc(21);
+	@extend .Service;
 	text-align: center;
 	line-height: $lineHeight-single;
-	padding: 16px 0;
+	padding: $u 0;
 	padding-right: 16px;
 	// Prevents margin collapse on medium-up
 	margin: 0;
