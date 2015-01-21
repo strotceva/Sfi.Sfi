@@ -14,6 +14,8 @@
 	border-left: 0;
 	border-color: $gray-line;
 	border-style: solid;
+	background: $gray-bg--light;
+	border-bottom: 5px solid $color-primary;
 }
 
 .MainMenu-Presentation{
@@ -109,7 +111,7 @@
 		display: block;
 	}
 	.MainMenu-Wrap{
-		margin-left: 70px;
+		margin-left: 50px;
 	}
 
 	.MainMenu-Toggle{

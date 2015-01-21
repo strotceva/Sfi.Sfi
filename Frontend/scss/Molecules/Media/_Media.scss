@@ -1,13 +1,17 @@
-.Media-Body{
-}
 .Media-Title{
 	@extend .H4;
+	margin-bottom: $u/2;
 }
 .Media-Teaser{
-	@extend .ParagraphAlt--Small;
+	@extend .Paragraph--Small;
+	margin-top: $u/2;
+	margin-bottom: $u/2;
 }
 .Media-Date{
-	@extend .Service;
+	@extend .Paragraph--Small;
+	color: $gray--light;
+	margin-top: $u/2;
+	margin-bottom: $u/2;
 }
 .Media-Category{
 	@extend .H5;
