@@ -7,3 +7,7 @@
 .PresentationLayout-Lead {
 	@extend .Paragraph--Large;
 }
+
+.PresentationLayout-Content {
+	border-right: 1px solid $gray-line;
+}
