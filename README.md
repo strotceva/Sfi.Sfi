@@ -2,7 +2,7 @@ Sfi.Sfi
 =======
 DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED 
 
-Now all of webiste code lives in a single repository:
+Now all of SFI.ru webiste code lives in a single repository:
 https://github.com/sfi-ru/SfiDistr
 
 It didn't have much sense having a seprate repo for just Site Package...
