@@ -32,7 +32,7 @@
 
 .StyleguideItem{
 	padding: 2*$u 0;
-	border-top: 1px solid #ccc;
+	border-top: $border-thin;
 }
 .StyleguideItem-Title{
 	font-size: 2rem;

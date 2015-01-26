@@ -1,28 +1,29 @@
-.Footer{
-	background: $gray--dark;
+.Footer {
 	margin-top: 3*$u;
-}
-
-.Footer-SiteTitle{
-	@extend .Paragraph--Large;
-	text-align: left !important;
-	color: white;
-}
-
-.Footer-SiteLogo{
-	overflow: hidden;
-	padding: 2*$u 0;
-	svg.SiteLogo{
-		path{
-  			fill: white !important;
-		}
+	padding: $u 0;
+	border-top: $border-thick;
+	
+	.Paragraph--Small {
+		margin: 0;
+		line-height: $lineHeight-loose;
 	}
+
 }
 
-.Footer-Description{
-	@extend .ParagraphAlt--Small;
-	line-height: 1.5;
-	margin-top: 0;
-	margin-bottom: 2*$u;
-	color: $gray-bg;
+.Footer-Description {
+	margin-top: $u/2 !important;
+}
+
+.Footer-Copyright {
+	margin-top: 3*$u;
+	color: $gray--light;
+}
+
+.FooterGallery-Header {
+	margin: 0;
+	padding: 1.5*$u;
+	color: $gray--light;
+	background: $gray-bg--light;
+	@extend .ServiceClassic;
+	text-align: center;
 }

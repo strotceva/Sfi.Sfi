@@ -1,12 +1,14 @@
 .MediaAnnouncement-Date{
-	@extend .H4;
+	@extend .Paragraph;
+	color: $color-primary;
+	text-align: right;
 }
 .MediaAnnouncement-Title{
-	@extend .H4Alt;
+	@extend .Paragraph;
 }
 .MediaAnnouncement-Teaser{
-	@extend .H4Alt;
+	@extend .ParagraphAlt;
 }
 .MediaAnnouncement-Place{
-	@extend .Service--Small;
+	@extend .ParagraphAlt;
 }

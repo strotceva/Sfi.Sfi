@@ -1,18 +1,38 @@
-.Service{
+.Service {
 	@extend .ParagraphAlt;
-	color: $gray--light;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.Service--Large {
+	@extend .Service;
+	font-size: rem-calc(14);
+	@media #{$medium-up}{
+		font-size: rem-calc(18);
+	}
+}
+.Service--Small {
+	@extend .Service;
+	font-size: rem-calc(14);
 }
 
-.Service--Small{
-	@extend .ParagraphAlt--Small;
-	color: $gray--light;
+.ServiceClassic {
+	@extend .Paragraph;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
-.ServiceEm{
+.ServiceLight {
+	@extend .ParagraphAlt;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.ServiceTiny {
+	@extend .Paragraph;
+	font-size: rem-calc(10);
+}
+.ServiceEm {
+	@extend .Paragraph--Small;
 	font-style: italic;
-	color: $gray--light;
-}
-
-.PageTitle{
-	@extend .H1Alt;
+	font-size: rem-calc(14);
 }

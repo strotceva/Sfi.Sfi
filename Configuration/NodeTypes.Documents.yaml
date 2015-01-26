@@ -25,6 +25,12 @@
   childNodes:
     main:
       type: 'TYPO3.Neos:ContentCollection'
+  properties:
+    lead:
+      type: string
+      defaultValue: '<p>Lead text</p>'
+      ui:
+        inlineEditable: TRUE
 
 'Sfi.Sfi:PageSection':
   ui:

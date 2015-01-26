@@ -109,7 +109,7 @@
 .SectionWithImageAccordionAnchor-Title{
     @extend .H6;
     margin: 0 !important;
-    border-top: 1px solid $gray-line;
+    border-top: $border-thin;
     padding-top: $u;
 }
 .SectionWithImageAccordionAnchor-SubTitle{

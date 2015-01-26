@@ -1,44 +1,50 @@
 
-%mainHeadings{
-	margin: $u auto;
-	font-family: $fontFamily-alt;
-	color: $gray--dark;
-	line-height: 1.2;
-}
-.H1{
-	@extend %mainHeadings;
-	font-size: rem-calc(48);
+%mainHeadings {
+	margin-top: $u;
+	margin-bottom: $u;
+	font-family: 'FranklinCond';
 	font-weight: bold;
+	color: $gray--dark;
+	line-height: $lineHeight-single;
+	@media #{$medium-up} {
+		line-height: $lineHeight-tight;
+	}
 }
-.H2{
+// Not used yet, consider deprication
+.H0 {
 	@extend %mainHeadings;
 	font-size: rem-calc(36);
-	font-weight: bold;
+	@media #{$medium-up} {
+		font-size: rem-calc(64);
+	}
 }
-.H3{
+.H1 {
+	@extend %mainHeadings;
+	font-size: rem-calc(36);
+	@media #{$medium-up} {
+		font-size: rem-calc(48);
+	}
+}
+.H2 {
 	@extend %mainHeadings;
 	font-size: rem-calc(24);
-	font-weight: bold;
+	@media #{$medium-up} {
+		font-size: rem-calc(36);
+	}
 }
-.H4{
+.H3 {
+	@extend %mainHeadings;
+	font-size: rem-calc(24);
+}
+.H4 {
 	@extend %mainHeadings;
 	font-size: rem-calc(18);
-	font-weight: bold;
-	line-height: 1.3;
 }
-.H5{
+.H5 {
 	@extend %mainHeadings;
-	font-size: rem-calc(18);
-	font-variant: small-caps;
-	text-transform: lowercase;
-	letter-spacing: 1px;
-	color: $gray--dark;
-	line-height: 1.3;
+	font-size: rem-calc(14);
 }
-.H6{
+.H6 {
 	@extend %mainHeadings;
-	font-size: rem-calc(16);
-	font-weight: bold;
-	font-style: normal;
-	line-height: 1.3;
+	font-size: rem-calc(12);
 }

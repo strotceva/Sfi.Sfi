@@ -7,18 +7,25 @@
 }
 
 
+.MainMenu-AllWrap{
+	border-top: 1px;
+	border-bottom: 1px;
+	border-right: 0;
+	border-left: 0;
+	border-color: $gray-line;
+	border-style: solid;
+	background: $gray-bg--light;
+	border-bottom: $border-thick;
+}
+
 .MainMenu-Presentation{
 	display: block;
-	@extend .H3Alt;
-	font-size: rem-calc(21);
-	color: white;
+	@extend .Service;
 	text-align: center;
-	background: $color-primary;
 	line-height: $lineHeight-single;
-	padding: 16px;
+	padding: $u 0;
 	// Prevents margin collapse on medium-up
 	margin: 0;
-	margin-bottom: $u;
 	transition: all 0.5s;
 	&:hover{
 		opacity: 0.7;
@@ -41,28 +48,11 @@
 .Page--Main .MainMenu-Toggle{
 	display: none;
 }
-@media #{$large-up}{
+@media #{$medium-up}{
 	.Page--Main .MainMenu-Toggle{
 		display: block;
 	}
 }
-
-
-
-// TODO: Could be refacotred with a section color mixin
-.MainMenu-Column:nth-child(1) .MainMenu-Presentation{
-	background: $red;
-}
-.MainMenu-Column:nth-child(2) .MainMenu-Presentation{
-	background: $blue;
-}
-.MainMenu-Column:nth-child(3) .MainMenu-Presentation{
-	background: $green;
-}
-.MainMenu-Column:nth-child(4) .MainMenu-Presentation{
-	background: $violet;
-}
-
 
 
 .MainMenu-Level2Item{
@@ -89,15 +79,16 @@
 @media #{$medium-up}{
 	.MainMenu-Column{
 		float: left;
-		width: calc(50% - 18px);
-		margin-right: 18px;
+		padding-right: 1.5*$u;
+	}
+	.MainMenu-Presentation{
+		text-align: left;
 	}
 	.MainMenu-Wrap{
 		margin-right: -18px;
 		overflow: hidden;
 	}
-}
-@media #{$large-up}{
+
 	.MainMenu-TopLeft{
 		float: left;
 	}
@@ -106,26 +97,30 @@
 		width: 33%;
 	}
 
-
-	.MainMenu-Column{
-		float: left;
-		width: 200px;
-		margin-right: 18px;
-	}
 	.js-MainMenu.isActive {
+		.MainMenu-Column{
+			width: 25%;
+		}
 		.MainMenu-SectionsWrap,.MainMenu-AlwaysHiddenOnSmall{
-			display: block;
+			display: block !important;
 		}
 	}
 	.MainMenu-HiddenOnSmall{
 		display: block;
 	}
 	.MainMenu-Wrap{
-		margin-left: 70px;
+		margin-left: 50px;
 	}
 
 	.MainMenu-Toggle{
 		float: left;
 		position: initial;
+	}
+}
+
+@media #{$large-up}{
+	.MainMenu-Column{
+		float: left;
+		padding-right: 3*$u;
 	}
 }

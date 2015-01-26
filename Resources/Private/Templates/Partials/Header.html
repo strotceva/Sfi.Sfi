@@ -12,11 +12,12 @@
 							</div>
 						</div>
 						<div class="MainMenu-TopRight marginTop-single marginBottom-half">
+							<div href="#menu" class="show-for-small-only MainMenu-Toggle js-MainMenu-Toggle"><f:render partial="Svg/IconMenu"/></div>
 							<div class="MainMenu-HiddenOnSmall Header-AdditionalInfo">
 								<div class="Header-Contacts">
-									<p>Москва, Покровка, 29</p>
-									<p><a href="tel:+74956230380">+7 495 623 0380</a></p>
-									<p><a href="mailto:info@sfi.ru">info@sfi.ru</a></p>
+									<p class="ParagraphAlt">Москва, Покровка, 29</p>
+									<p class="ParagraphAlt"><a class="Link" href="tel:+74956230380">+7 495 623 0380</a></p>
+									<p class="ParagraphAlt"><a class="Link" href="mailto:info@sfi.ru">info@sfi.ru</a></p>
 								</div>
 								<div class="Header-SecondaryMenu">
 									{secondaryMenu -> f:format.raw()}
@@ -24,20 +25,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="">
-						<div class="hide  MainMenu-FollowLinks">
-							<f:render partial="FollowLinks" />
-						</div>
-						<div href="#menu" class="MainMenu-Toggle js-MainMenu-Toggle"><f:render partial="Svg/IconMenu"/></div>
-						{mainMenu -> f:format.raw()}
-					</div>
 				</div>
 			</div>
-
-			<f:if condition="{breadcrumbMenu}">
-				{breadcrumbMenu -> f:format.raw()}
-			</f:if>
-
 		</div>
 	</div>
+	<div class="MainMenu-AllWrap">
+		<div class="row">
+			<div class="columns">
+				<div class="hide  MainMenu-FollowLinks">
+					<f:render partial="FollowLinks" />
+				</div>
+				<div href="#menu" class="show-for-medium-up MainMenu-Toggle js-MainMenu-Toggle"><f:render partial="Svg/IconMenu"/></div>
+				{mainMenu -> f:format.raw()}
+			</div>
+		</div>
+	</div>
+	<f:if condition="{breadcrumbMenu}">
+		<div class="row">
+			<div class="columns">
+					{breadcrumbMenu -> f:format.raw()}
+			</div>
+		</div>
+	</f:if>
 </header>

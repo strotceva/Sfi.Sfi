@@ -4,8 +4,14 @@
 	height:100%;
 }
 
+@media #{$medium-up} {
+	.SiteLogo {
+		width: 340px;
+		max-width: initial;
+	}
+}
 @media #{$large-up} {
-	.SiteLogo{
-		max-width: 400px;
+	.SiteLogo {
+		width: 450px;
 	}
 }

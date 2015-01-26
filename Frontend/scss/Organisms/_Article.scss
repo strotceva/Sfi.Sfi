@@ -1,41 +1,37 @@
-.Article{
-	margin-top: 2*$u;
+.NewsDetail{
+	margin-top: 3*$u !important;
+	@media #{$medium-up}{
+		margin-top: 6*$u !important;
+	}
 }
 
 
 
 
-.Article-CoverPhoto{
-	margin-bottom: 2*$u;
+.Article-CoverPhoto .Figure{
+	margin-bottom: 0;
 }
-.Article-Gallery{}
-
-
 
 	.Article-Bar{
-		border-top: 6px solid $color-primary;
 		margin-top: 2*$u;
+		margin-bottom: $u;
 	}
 	.Article-Date{
-		@extend .ParagraphAlt--Small;
-		color: $color-primary;	
+		@extend .ServiceEm;
+		margin-bottom: 0;
 	}
 	.Article-Author{
-		@extend .ParagraphAlt--Small;
-		color: $color-primary;
+		
 	}
 	.Article-AuthorLabel{
-		@extend .H5;
-		margin: 0;
-		padding-left: 2*$u;
+		@extend .ServiceEm;
 		padding-right: $u/2;
-		line-height: 1;
-		float: left;
+		@media #{$medium-up}{
+			padding-left: 2*$u;
+		}
 	}
 	.Article-AuthorName{
-		@extend .H6Alt;
-		margin: 0;
-		float: left;
+		@extend .Service--Small;
 	}
 	.Article-CoverPhoto .Figure{
 		margin-top: 0;
@@ -44,18 +40,18 @@
 
 .NewsDetail-Article--Soft{
 	.Article-Title{
-		@extend .H1Alt;
+		@extend .H1;
+		text-align: center;
 		margin-top: 0;
 		margin-bottom: 0;
 	}
 	.Article-Teaser{
-		@extend .H4Alt;
+		@extend .Paragraph;
 		color: $gray--light;
 		text-align: center;
-		margin-bottom: 1.5*$u;
 	}
 	.Article-Lead{
-		@extend .ParagraphAlt--XLarge;
+		@extend .Paragraph--Large;
 	}
 }
 
@@ -66,11 +62,41 @@
 		margin-bottom: 0;
 	}
 	.Article-Teaser{
-		@extend .H4Alt;
+		@extend .Paragraph;
 		color: $gray--light;
-		margin-bottom: 1.5*$u;
 	}
 	.Article-Lead{
-		@extend .ParagraphAlt--Large;
+		@extend .Paragraph;
+	}
+}
+
+.NewsDetail-MoreNews:before {
+	border-left: $border-thin;
+	content: ' ';
+	position: absolute;
+	height: 100%;
+	left: -15px;
+}
+
+@media #{$medium-only}{
+	.NewsDetail-MoreNews {
+		.MediaSmall-Image{
+			display: none;
+		}
+		.MediaSmall-Body{
+			margin-left: 0;
+		}
+	}
+}
+
+.NewsDetail {
+	@include grid-row();
+}
+@media screen and (min-width: rem-calc(780)) {
+	.NewsDetail-Article--Hard {
+		@include grid-column(7);
+	}
+	.NewsDetail-MoreNews {
+		@include grid-column(4, false, false, 1);
 	}
 }

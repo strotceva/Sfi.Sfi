@@ -10,13 +10,13 @@
 	margin-bottom: $u/2 !important;
 }
 .QuoteBlock-AuthorDescription{
-	@extend .H6Alt;
+	@extend .ServiceEm;
 	margin-top: 0 !important;
 }
 
 @media #{$small-only}{
 	.QuoteBlock-Image > img{
-		border: 1px solid $gray-line;
+		border: $border-thin;
 		border-radius: 50%;
 		max-width: 96px;
 		margin-right: 2*$u;
@@ -28,6 +28,6 @@
 		padding-left: 0;
 	}
 	.QuoteBlock{
-		border-bottom: 1px solid $gray-line;
+		border-bottom: $border-thin;
 	}
 }

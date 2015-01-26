@@ -1,16 +1,14 @@
-$gray--dark: #333;
+$gray--dark: #222;
 $gray--light: #828282;
 $gray-bg: #dadada;
 $gray-bg--light: #f7f7f7;
 $gray-line: #ccc;
 
-$red: #cd2c31;
-$blue: #2daebf;
-$green: #82bc00;
-$violet: #835f87;
-
+$red: #ba3925;
+$blue: #2455c3;
 
 $color-primary: $red;
+$color-primaryAlt: $blue;
 
 
 
@@ -27,38 +25,3 @@ $color-primary: $red;
 .borderColor-white{
 	border-color: white !important;
 }
-
-
-
-
-
-
-@mixin colormix($pageid, $color){
-	#{$pageid}{
-		.Figure figcaption{
-			background-color: $color !important;
-		}
-		.Blockquote,
-		.Blockquote,
-		.QuoteAndPictureBlock-Text,
-		.SectionWithImageTabAnchor-Image:before{
-			border-color: $color !important;
-		}
-		.SectionMenu-Item:after,
-		.StyleSet-ModernModest .Headline-Title h2,
-		.slick-prev:before, .slick-next:before,
-		.slick-dots li.slick-active button:before,
-		.Sections--Pills .Sections-Anchor:after,{
-			color: $color !important;
-		}
-	}
-
-}
-
-
-//main
-@include colormix("body",$color-primary);
-@include colormix("#about",$red);
-@include colormix("#study",$blue);
-@include colormix("#science",$green);
-@include colormix("#projects",$violet);

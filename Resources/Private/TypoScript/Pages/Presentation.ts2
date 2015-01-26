@@ -3,7 +3,10 @@ presentation < page{
 	body{
 		templatePath = 'resource://Sfi.Sfi/Private/Templates/Pages/Presentation.html'
 
-		header.withLine = ${true}
+		node = ${q(node).get(0)}
+
+		title = ${q(node).property('title')}
+		lead = ${q(node).property('lead')}
 	}
 }
 
