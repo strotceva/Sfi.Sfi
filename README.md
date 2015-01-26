@@ -1,7 +1,8 @@
 Sfi.Sfi
 =======
+DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED DEPRECATED 
 
-Sfi Neos website package
-
-Here is our website distribution:
+Now all of webiste code lives in a single repository:
 https://github.com/sfi-ru/SfiDistr
+
+It didn't have much sense having a seprate repo for just Site Package...
