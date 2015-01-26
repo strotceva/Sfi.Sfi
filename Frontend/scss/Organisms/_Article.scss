@@ -71,7 +71,7 @@
 }
 
 .NewsDetail-MoreNews:before {
-	border-left: 1px solid $gray-line;
+	border-left: $border-thin;
 	content: ' ';
 	position: absolute;
 	height: 100%;

@@ -15,7 +15,7 @@
 	border-color: $gray-line;
 	border-style: solid;
 	background: $gray-bg--light;
-	border-bottom: 5px solid $color-primary;
+	border-bottom: $border-thick;
 }
 
 .MainMenu-Presentation{
@@ -102,7 +102,7 @@
 			width: 25%;
 		}
 		.MainMenu-SectionsWrap,.MainMenu-AlwaysHiddenOnSmall{
-			display: block;
+			display: block !important;
 		}
 	}
 	.MainMenu-HiddenOnSmall{

@@ -5,7 +5,7 @@
 	@extend .H4;
 	color: $color-primary;
 	margin: 0 !important;
-	border-bottom: 1px dotted $gray-line;
+	border-bottom: $border-dotted;
 	a {
 		display: block;
 		padding: 2/3*$u;
@@ -15,7 +15,7 @@
 		content: ' »';
 	}
 	&:first-child {
-		border-top: 1px dotted $gray-line;
+		border-top: $border-dotted;
 	}
 }
 

@@ -1,16 +1,18 @@
 .SectionDivider{
-	@extend .H3Alt;
-	@extend .marginVertical-double;
+	@extend .ServiceClassic;
+	margin: 0;
+	margin-bottom: $u;
+	color: $gray--light;
 	line-height: 1;
-	padding: $u/2 0;
+	padding: 1.5*$u 0;
 	text-align: center;
 }
 .SectionDivider--Service{
 	@extend .SectionDivider;
-	border-bottom: 1px solid $gray-line;
+	border-bottom: $border-thin;
 }
 
 .SectionDivider--Content{
 	@extend .SectionDivider;
-	border-bottom: 6px solid $color-primary;
+	border-bottom: $border-thick;
 }

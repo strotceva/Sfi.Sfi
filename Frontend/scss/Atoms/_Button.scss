@@ -12,11 +12,8 @@
 }
 
 .ButtonInline {
+	@extend .Link;
 	@extend .ParagraphAlt;
-	color: $color-primary;
-	&:hover{
-		opacity: 0.7;
-	}
 	&:after {
 		content: "›";
 		padding-left: 3px;
